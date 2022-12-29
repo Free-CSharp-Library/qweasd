@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Number 2</title>
+    <link rel="stylesheet" href="vid.css">
+    <script src="https://kit.fontawesome.com/39ac9c7ed0.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/139bb7fa0d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="x-icon" href="./resources pics/icon copy.png">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="navigation">
+        <div class="side-nav">
+            <a href="index.html" class="logo">
+                <img src="./resources pics/icon.png" class="img-logo">
+                <p class="title">FREE C# LIBRARY</p>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span>HOME</span></a></li>
+                <li><a href="gallery.html#tutorial"><i class="fa-solid fa-brain"></i><span>LEARN</span></a></li>
+                <li><a href="quiz-container.html"><i class="fa-sharp fa-solid fa-pencil"></i><span>QUIZZES</span></a>
+                </li>
+                <li><a href="gallery.html#about"><i class='bx bxs-info-circle'></i><span>ABOUT</span></a>
+                </li>
+                <li><a href="gallery.html#feedback"><i class="fa-solid fa-comment"></i><span>FEEDBACK</span></a></li>
+                <li><a href="notbook.html"><i class='bx bxs-book-content'></i><span>NOTEBOOK</span></a></li>
+                <div class="active"></div>
+            </ul>
+        </div>
+
+        <section class="tutorial" id="tutorial">
+            <button onclick="history.back()" class="back">
+                < </button>
+                    <div class="vid">
+                    </div>
+                    <div class="example" id="typecasting">
+                        <center>
+                            <h1>C# Type Casting</h1>
+                        </center>
+                        <h4>C# Type Casting</h4>
+                        <span>Type casting is when you assign a value of one data type to another type.</span><br><br>
+                        <span>In C#, there are two types of casting:</span><br><br>
+                        <span><b>• Implicit Casting</b> (automatically) - converting a smaller type to a larger type
+                            size
+                            <br>
+                            <span style="color: gray;">char</span> ➤<span style="color: gray;"> int</span> ➤<span
+                                style="color: gray;"> long</span> ➤
+                            <span style="color: gray;"> float</span> ➤<span style="color: gray;"> double</span>
+                        </span>
+                        <br><br>
+                        <span><b>• Explicit Casting</b> (manually) - converting a larger type to a smaller size type
+                            <br>
+                            <span style="color: gray;">double</span> ➤<span style="color: gray;"> float</span> ➤<span
+                                style="color: gray;"> long</span> ➤
+                            <span style="color: gray;"> int</span> ➤<span style="color: gray;"> char</span>
+                        </span><br><br>
+                        <h4>Implicit Casting</h4>
+                        <span>Implicit casting is done automatically when passing a smaller size type to a larger size
+                            type:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">
+                                <span style="color: blue;">int</span>
+                                <span> myInt = 15</span>
+                                <span style="color: gray;">;</span><br>
+                            </span>
+                            <span style="margin-left: 20px;">
+                                <span style="color: blue;">double</span>
+                                <span> myDouble = myInt</span>
+                                <span style="color: gray;">; // Automatic casting: int to
+                                    double</span><br><br></span>
+                            <span style="margin: 20px;">Console<span
+                                    style="color: gray;">.WriteLine(</span><span>myInt</span><span
+                                    style="color: gray;">); // Outputs 9</span></span>
+                            </span><br>
+                            <span style="margin: 20px;">Console<span
+                                    style="color: gray;">.WriteLine(</span><span>myDouble</span><span
+                                    style="color: gray;">); // Outputs 9</span></span>
+                            </span><br><br><br>
+                        </div><br><br>
+                        <h4>Explicit Casting</h4>
+                        <span>Explicit casting must be done manually by placing the type in parentheses in front of the
+                            value:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">
+                                <span style="color: blue;">double</span>
+                                <span> myDouble = 9.78</span>
+                                <span style="color: gray;">;</span><br></span>
+                            <span style="color: blue; margin-left: 20px;">int</span>
+                            <span> myInt =</span>
+                            <span style="color:blue;">(int)</span>
+                            <span>myDouble</span>
+                            <span style="color: gray;">; // Manual casting: double to int</span><br>
+                            <span style="margin: 20px;">Console<span
+                                    style="color: gray;">.WriteLine(</span><span>myDouble</span><span
+                                    style="color: gray;">); // Outputs 9.78</span></span>
+                            </span><br>
+                            <span style="margin: 20px;">Console<span
+                                    style="color: gray;">.WriteLine(</span><span>myInt</span><span
+                                    style="color: gray;">); // Outputs 9</span></span>
+                            </span><br>
+                            <br><br>
+                        </div><br><br>
+                        <h4>Type Conversion Methods</h4>
+                        <span>It is also possible to convert data types explicitly by using built-in methods, such as
+                            <span style="color: gray;">Convert.ToBoolean, Convert.ToDouble, Convert.ToString,
+                                Convert.ToInt32 (int) and
+                                Convert.ToInt64 (long):</span></span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">
+                                <span style="color: blue;">int</span>
+                                <span> myInt =</span>
+                                <span>10</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="color: blue;margin-left: 20px;">double</span>
+                                <span> myDouble = 5.25</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="color: blue;margin-left: 20px;">bool</span>
+                                <span> myBool = true</span>
+                                <span style="color: gray;">;</span><br><br>
+                                <span style="margin-left: 20px;">Console<span style="color: gray;">.WriteLine(</span>
+                                    <span>Convert.</span>
+                                    <span style="color: green;">ToString</span>
+                                    <span style="color: gray;">(</span>
+                                    <span>myInt</span>
+                                    <span style="color: gray;">)); // convert int to string
+                                    </span><br>
+                                    <span style="margin-left: 20px;">Console<span
+                                            style="color: gray;">.WriteLine(</span>
+                                        <span>Convert.</span>
+                                        <span style="color: green;">ToDouble</span>
+                                        <span style="color: gray;">(</span>
+                                        <span>myInt</span>
+                                        <span style="color: gray;">)); // convert int to double
+                                        </span></span>
+                                </span><br>
+                                <span style="margin-left: 20px;">Console<span style="color: gray;">.WriteLine(</span>
+                                    <span>Convert.</span>
+                                    <span style="color: green;">ToInt23</span>
+                                    <span style="color: gray;">(</span>
+                                    <span>myDouble</span>
+                                    <span style="color: gray;">)); // convert double to int
+                                    </span><br>
+                                    <span style="margin-left: 20px;">Console<span
+                                            style="color: gray;">.WriteLine(</span>
+                                        <span>Convert.</span>
+                                        <span style="color: green;">ToString</span>
+                                        <span style="color: gray;">(</span>
+                                        <span>myBool</span>
+                                        <span style="color: gray;">)); // convert bool to string
+                                        </span><br><br><br>
+                        </div><br><br>
+                        <div style="width: 100%; background: #ffffcc; padding: 10px;">
+                            <h2>Why Conversion?</h2>
+                            <span>Many times, there's no need for type conversion. But sometimes you have to. Take a
+                                look at the next chapter, when working with <a href="./vid1.html#userinput">user
+                                    input</a> , to see an
+                                example of
+                                this.</span>
+                        </div><br><br>
+                    </div>
+                    <div class="example" style="background-color: #ffffcc;">
+                        <h2>
+                            <center>Did you know?<br>C# is mainly used in developing web applications and desktop
+                                applications</center>
+                        </h2>
+                    </div>
+
+                    <video class="vid1" width="900" height="auto" controls>
+                        <source src="./resources pics/user.mp4" type="video/mp4">
+                    </video>
+                    <div class="example" id="userinput">
+                        <center>
+                            <h1>C# User Input</h1>
+                        </center>
+                        <h4>C# User Input</h4>
+                        <span>You have already learned that <span style="color: gray;">Console.WriteLine()</span> is
+                            used to output
+                            (print)
+                            values. Now we will use
+                            <span style="color: gray;">Console.ReadLine()</span> to get user input.</span><br><br>
+                        <span>In the following example, the user can input his or hers username, which is stored in the
+                            variable
+                            <span style="color: gray;">userName</span>. Then we print the value of <span
+                                style="color: gray;">userName</span>:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: gray; margin-left: 20px;">// Type your username and press
+                                enter</span><br>
+                            <span style="margin-left: 20px;">Console<span style="color: gray;">.WriteLine(</span>
+                                <span style="color: green;">"Enter username:"</span>
+                                <span style="color: gray;">);
+                                </span><br><br>
+                                <span style="color: gray; margin-left: 20px;">// Create a string variable and get user
+                                    input from the
+                                    keyboard and store it in the variable</span><br>
+                                <span style="color: blue; margin-left:20px ;">string</span>
+                                <span>userName = Console</span>
+                                <span style="color: gray;">.ReadLine();</span><br><br>
+                                <span style="color: gray; margin-left: 20px;">// Print the value of the variable
+                                    (userName), which will
+                                    display the input value</span><br>
+                                <span style="margin-left: 20px;">Console<span style="color: gray;">.WriteLine(</span>
+                                    <span style="color: green;">"Username is:"</span>
+                                    <span>+ userName</span>
+                                    <span style="color: gray;">);
+                                    </span><br><br><br>
+                        </div><br><br>
+                        <h4>User Input and Numbers</h4>
+                        <span>The <span style="color: gray;">Console.ReadLine()</span> method returns a string.
+                            Therefore, you cannot
+                            get information from another data
+                            type, such as <span style="color: gray;">int</span>. The following program will cause an
+                            error:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">Console<span style="color: gray;">.WriteLine(</span>
+                                <span style="color: green;">"Enter your age:"</span>
+                                <span style="color: gray;">);
+                                </span><br>
+                                <span style="color: blue; margin-left:20px ;">int</span>
+                                <span>age = Console</span>
+                                <span style="color: gray;">.ReadLine();</span><br>
+                                <span style="margin-left: 20px;">Console<span style="color: gray;">.WriteLine(</span>
+                                    <span style="color: green;">"Your age is: "</span>
+                                    <span>+ age</span>
+                                    <span style="color: gray;">);
+                                    </span><br><br><br>
+                                    <h2 style="margin-left: 20px;"><b>The error message will be something like this:</b>
+                                    </h2><br>
+                                    <div style="width: 100%; background:black; height: auto; padding: 10px;">
+                                        <span
+                                            style="background: black; color: #fff; font-family: 'Courier New', Courier, monospace; font-size: 25px;">Cannot
+                                            implicitly convert type 'string' to 'int'
+                                        </span>
+                                    </div><br><br><br>
+                        </div><br><br>
+                        <span>Like the error message says, you cannot implicitly convert type 'string' to
+                            'int'.</span><br><br>
+                        <span>Luckily, for you, you just learned from the <a href="./vid1.html#typecasting">previous
+                                chapter (Type
+                                Casting)</a>, that you can
+                            convert any type
+                            explicitly, by using one of the Convert.To methods:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">Console<span style="color: gray;">.WriteLine(</span>
+                                <span style="color: green;">"Enter your age:"</span>
+                                <span style="color: gray;">);
+                                </span><br>
+                                <span style="color: blue; margin-left:20px ;">int</span>
+                                <span>age = Convert</span><span style="color: gray;">.ToInt32(</span>
+                                <span>Console.</span>
+                                <span style="color: gray;">ReadLine());</span><br>
+                                <span style="margin-left: 20px;">Console<span style="color: gray;">.WriteLine(</span>
+                                    <span style="color: green;">"Your age is: "</span>
+                                    <span>+ age</span>
+                                    <span style="color: gray;">);
+                                    </span><br><br><br>
+                        </div><br><br>
+                        <span><b>Note:</b> If you enter wrong input (e.g. text in a numerical input), you will get an
+                            exception/error
+                            message
+                            (like System.FormatException: 'Input string was not in a correct format.').</span><br><br>
+                        <span>You will learn more about <a href="#">Exceptions</a> and how to handle errors in a later
+                            chapter.
+                        </span>
+                    </div>
+                    <div class="example" style="background-color: #ffffcc;">
+                        <h2>
+                            <center>Did you know?<br>C# is significantly similar to other computer languages such as
+                                Java and C++</center>
+                        </h2>
+                    </div>
+
+
+                    <video class="vid1" width="900" height="auto" controls>
+                        <source src="./resources pics/operators.mp4" type="video/mp4">
+                    </video>
+                    <div class="example" id="operators">
+                        <center>
+                            <h1>C# Operators</h1>
+                        </center>
+                        <h4>Operators</h4>
+                        <span>Operators are used to perform operations on variables and values.</span><br><br>
+                        <span>In the example below, we use the <span style="color: gray;">+</span> <b>operator</b> to
+                            add together two
+                            values:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">int </span>
+                            <span>x </span>
+                            <span>= 100 <span style="color: green;">+</span> 50</span>
+                            <span style="color: gray;">;</span><br><br><br>
+                        </div><br><br>
+                        <span>Although the <span style="color: gray;">+</span> operator is often used to add together
+                            two values, like
+                            in the example above, it can also
+                            be used to add together a variable and a value, or a variable and another
+                            variable:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">int </span>
+                            <span>sum1 </span>
+                            <span>= 100 <span style="color: green;">+</span> 50</span>
+                            <span style="color: gray;">; // 150 (100 + 50)</span><br>
+                            <span style="color: blue; margin-left: 20px;">int </span>
+                            <span>sum2 </span>
+                            <span>= sum1 <span style="color: green;">+</span> 250</span>
+                            <span style="color: gray;">; // 400 (150 + 250)</span><br>
+                            <span style="color: blue; margin-left: 20px;">int </span>
+                            <span>sum3 </span>
+                            <span>= sum2 <span style="color: green;">+</span> sum2</span>
+                            <span style="color: gray;">; // 800 (400 + 400)</span><br><br>
+                        </div><br><br>
+                        <h4>Arithmetic Operators</h4>
+                        <span>Arithmetic operators are used to perform common mathematical operations:</span><br><br>
+                        <center>
+                            <table>
+                                <tr>
+                                    <th>Operator <br><br></th>
+                                    <th>Name <br><br></th>
+                                    <th>Description <br><br></th>
+                                    <th>Example <br><br></th>
+                                </tr>
+                                <tr>
+                                    <td>+ &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Addition &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Adds together two values &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x+y &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>-&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Subtraction &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Subtracts one value from another &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x-y&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>*&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Multiplication &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Multiplies two values &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x*y&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>/&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Division &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Divides one value by another &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x/y&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>%&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Modulus &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Returns the division remainder &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x%y&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>++&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Increment &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Increases the value of a variable by 1 &emsp13;&emsp13;&emsp13;&emsp13;<br><br>
+                                    </td>
+                                    <td>x++&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>--&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Decrement &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Decreases the value of a variable by 1 &emsp13;&emsp13;&emsp13;&emsp13;<br><br>
+                                    </td>
+                                    <td>x--&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                            </table>
+                        </center><br><br>
+                        <h4>Assignment Operators</h4>
+                        <span>Assignment operators are used to assign values to variables.</span><br><br>
+                        <span>In the example below, we use the <b>assignment</b> operator (<span
+                                style="color: gray;">=</span>) to
+                            assign the value <b>10</b> to a variable
+                            called <b>x</b>:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">int </span>
+                            <span>x </span>
+                            <span>= 10</span>
+                            <span style="color: gray;">;</span><br><br><br>
+                        </div><br><br>
+                        <span>The <b>addition assignment</b> operator (<span style="color: gray;">+=</span>) adds a
+                            value to a
+                            variable:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">int </span>
+                            <span>x </span>
+                            <span>= 10</span>
+                            <span style="color: gray;">;</span><br>
+                            <span style="margin-left: 20px;">x</span><span
+                                style="color: green;">+=</span><span>5</span><span style="color: gray;">;</span>
+                            <br><br>
+                        </div><br><br>
+                        <span>A list of all assignment operators:</span><br><br>
+                        <center>
+                            <table>
+                                <tr>
+                                    <th>Operator&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                                    <th>Example&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                                    <th>Same as&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                                </tr>
+                                <tr>
+                                    <td>=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x=5&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x=5&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>+=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x+=3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x=x+3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>-=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x-=3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x=x-3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>*=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x*=3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x=x*3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>/=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x/=3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x=x/3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>%=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x%=3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x=x%3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>&=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x&=3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x=x&3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>|=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x|=3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x=x|3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>^=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x^=3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x=x^3</td>
+                                </tr>
+                                <tr>
+                                    <td>>>=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x>>=3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x=x>>3&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <<= &emsp13;&emsp13;&emsp13;&emsp13;<br><br>
+                                    </td>
+                                    <td>
+                                        x<<=3 &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>
+                                        x=x<<3 &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                            </table>
+                        </center><br><br>
+                        <h4 id="comparison">Comparison Operators</h4>
+                        <span>Comparison operators are used to compare two values (or variables). This is important in
+                            programming,
+                            because it helps us to find answers and make decisions.</span><br><br>
+                        <span>The return value of a comparison is either <span style="color: gray;">True</span> or <span
+                                style="color: gray;">True</span>. These values are known as <i>Boolean values</i>, and
+                            you will learn more about them in the <a href="#">Booleans</a> and <a href="#">If..Else</a>
+                            chapter.</span><br><br>
+                        <span>In the following example, we use the <b>greater than operator</b> (<span
+                                style="color: gray;">></span>) to
+                            find out if 5 is greater than
+                            3:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">int </span>
+                            <span>x </span>
+                            <span>= 5 </span>
+                            <span style="color: gray;">;</span><br>
+                            <span style="color: blue; margin-left: 20px;">int </span>
+                            <span>x </span>
+                            <span>= 3 </span>
+                            <span style="color: gray;">;</span><br>
+                            <span style="margin-left: 20px;">Console<span style="color: gray;">.WriteLine(</span>
+                                <span>x</span>
+                                <span style="color: green;">></span>
+                                <span>y</span>
+                                <span style="color: gray;">); // returns True because 5 is greater than 3
+                                </span><br><br>
+                        </div><br><br>
+                        <span>A list of all comparison operators:</span><br><br>
+                        <center>
+                            <table>
+                                <tr>
+                                    <th>Operator&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                                    <th>Name&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                                    <th>Example&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                                </tr>
+                                <tr>
+                                    <td>==&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Equal to&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x==y&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>!=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Not equal&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x!=y&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>>&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Greater than&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x>y&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <&emsp13;&emsp13;&emsp13;&emsp13;<br><br>
+                                    </td>
+                                    <td>Less than&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x< y &emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>>=&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Greater than or equal to&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x>=y&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <= &emsp13;&emsp13;&emsp13;&emsp13;<br><br>
+                                    </td>
+                                    <td>Less than or equal to&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td> x<= y&emsp13;&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                            </table>
+                        </center><br><br>
+                        <h4>Logical Operators</h4>
+                        <span>As with <a href="./vid1.html#comparison">comparison operators</a>, you can also test for
+                            <span style="color: gray;">True</span> or <span style="color: gray;">False</span>
+                            values with <b>logical operators.</b></span><br><br>
+                        <span>Logical operators are used to determine the logic between variables or
+                            values:</span><br><br>
+                        <center>
+                            <table>
+                                <tr>
+                                    <th>Operator&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                                    <th>Name&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                                    <th>Description&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                                    <th>Example&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                                </tr>
+                                <tr>
+                                    <td>&&&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Logical and&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Returns True if both statements are true&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>x<5 && x<10 &emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>||&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Logical or&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Returns True if one of the statements is true&emsp13;&emsp13;&emsp13;<br><br>
+                                    </td>
+                                    <td>x<5 || x<4&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>!&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Logical not&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>Reverse the result, returns False if the result is
+                                        true&emsp13;&emsp13;&emsp13;<br><br></td>
+                                    <td>!(x<5 && x< 10)&emsp13;&emsp13;&emsp13;<br><br></td>
+                                </tr>
+                            </table>
+                        </center><br><br>
+                        <div style="width: 100%; background: #ffffcc; padding: 10px;">
+                            <span>You will learn more about comparison and logical operators in the <a
+                                    href="#">Booleans</a> and <a href="#">If...Else</a>
+                                chapters.</span>
+                        </div><br>
+                    </div>
+                    <div class="example" style="background-color: #ffffcc;">
+                        <h2>
+                            <center>Did you know?<br>Although C# and Java are highly similar, C# contains more features
+                                than Java</center>
+                        </h2>
+                    </div>
+
+
+                    <div class="example" id="math" title="C# Math">
+                        <center>
+                            <h1>C# Math</h1>
+                        </center>
+                        <span>The C# Math class has many methods that allows you to perform mathematical tasks on
+                            numbers.
+                        </span>
+                        <h4>Math.Max(<i>x,y</i>)</h4>
+                        <span>The <span style="color: gray;">Math.Max(<i>x,y</i>)</span> method can be used to find the
+                            highest value of
+                            x and
+                            y:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">Math</span><span
+                                style="color: gray;">.Max(</span><span>5</span><span
+                                style="color: gray;">,</span><span>10</span><span
+                                style="color: gray;">);</span><br><br><br>
+                        </div><br><br>
+                        <h4>Math.Min(<i>x,y</i>)</h4>
+                        <span>The <span style="color: gray;">Math.Min(<i>x,y</i>)</span> method can be used to find the
+                            lowest value of
+                            x and
+                            y:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">Math</span><span
+                                style="color: gray;">.Min(</span><span>5</span><span
+                                style="color: gray;">,</span><span>10</span><span
+                                style="color: gray;">);</span><br><br><br>
+                        </div><br><br>
+                        <h4>Math.Sqrt(<i>x</i>)</h4>
+                        <span>The <span style="color: gray;">Math.Sqrt(<i>x</i>)</span>method returns the square root of
+                            x:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">Math</span><span
+                                style="color: gray;">.Sqrt(</span><span>64</span><span
+                                style="color: gray;">);</span><br><br><br>
+                        </div><br><br>
+                        <h4>Math.Abs(<i>x</i>)</h4>
+                        <span>The <span style="color: gray;">Math.Abs(<i>x</i>)</span>method returns the absolute
+                            (positive) value of
+                            x:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">Math</span><span
+                                style="color: gray;">.Abs(</span><span>-4.7</span><span
+                                style="color: gray;">);</span><br><br><br>
+                        </div><br><br>
+                        <h4>Math.Round()</h4>
+                        <span>The <span style="color: gray;">Math.Round(<i>x</i>)</span>rounds a number to the nearest
+                            whole
+                            number:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">Math</span><span
+                                style="color: gray;">.Round(</span><span>99.9</span><span
+                                style="color: gray;">);</span><br><br><br>
+                        </div><br><br>
+                    </div>
+                    <div class="example" style="background-color: #ffffcc;">
+                        <h2>
+                            <center>Did you know?<br>By learning C# you can use this skill in the future because it is a
+                                high in demand skill as of now</center>
+                        </h2>
+                    </div>
+
+
+                    <div class="example" id="strings">
+                        <center>
+                            <h1>C# Strings</h1>
+                        </center>
+                        <h4>C# Strings</h4>
+                        <span>Strings are used for storing text.</span><br><br>
+                        <span>A <span style="color: gray;">string</span> variable contains a collection of characters
+                            surrounded by
+                            double quotes:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">Create a variable of type <span
+                                    style="color: gray;">string</span> and
+                                assign it a value:</span><br>
+                            <br>
+                            <span style="color: blue; margin-left: 20px;">string</span><span> greeting</span><span
+                                style="color: gray;">=</span><span style="color: green;">"Hello"</span><span
+                                style="color: gray;">;</span>
+                            <br><br><br>
+                        </div><br><br>
+                        <span>A string variable can contain many words, if you want:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">string</span><span> greeting2</span><span
+                                style="color: gray;">=</span><span style="color: green;">"Nice to meet you!"</span><span
+                                style="color: gray;">;</span>
+                            <br><br><br>
+                        </div><br><br>
+                        <h4>String Length</h4>
+                        <span>A string in C# is actually an object, which contain properties and methods that can
+                            perform certain
+                            operations on strings. For example, the length of a string can be found with the <span
+                                style="color: gray;">Length</span> property:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">string</span><span> txt</span><span
+                                style="color: gray;">=</span><span
+                                style="color: green;">"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span><span
+                                style="color: gray;">;</span>
+                            <br>
+                            <span style="margin-left: 20px;">Console <span>.WriteLine(</span><span>
+                                    <span style="color: green;">"The length of the txt string is: " +</span>
+                                    <span>txt</span> <span style="color: gray;">.</span> Length <span
+                                        style="color: gray;">);</span></span></span><br><br><br>
+                        </div><br><br>
+                        <h4>Other Methods</h4>
+                        <span>There are many string methods available, for example <span
+                                style="color: gray;">ToUpper()</span> and <span style="color: gray;">ToLower()</span>,
+                            which returns a copy of the
+                            string converted to uppercase or lowercase:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">string</span><span> txt</span><span
+                                style="color: gray;">=</span><span style="color: green;">"Hello World"</span><span
+                                style="color: gray;">;</span>
+                            <br>
+                            <span style="margin-left: 20px;">Console <span>.WriteLine(</span><span>
+                                    <span>txt</span> <span style="color: gray;">.</span><span
+                                        style="color: gray;">ToUpper()); //
+                                        Outputs "HELLO WORLD"</span></span></span><br>
+                            <span style="margin-left: 20px;">Console <span>.WriteLine(</span><span>
+                                    <span>txt</span> <span style="color: gray;">.</span><span
+                                        style="color: gray;">ToLower()); //
+                                        Outputs "hello world"</span></span></span><br><br><br>
+                        </div><br><br>
+                    </div>
+
+
+                    <div class="example" id="booleans">
+                        <h1>C# Booleans</h1>
+                        <h4>C# Booleans</h4>
+                        <span>Very often, in programming, you will need a data type that can only have one of two
+                            values,
+                            like:</span><br><br>
+                        <span>• YES / NO</span><br><br>
+                        <span>• ON / OFF</span><br><br>
+                        <span>• TRUE / FALSE</span><br><br><br>
+                        <span>For this, C# has a <span style="color: gray;">bool</span> data type, which can take the
+                            values <span style="color: gray;">true</span> or <span
+                                style="color: gray;">false</span>.</span><br><br>
+                        <h4>Boolean Values</h4>
+                        <span>A boolean type is declared with the bool keyword and can only take the values <span
+                                style="color: gray;">true</span> or <span
+                                style="color: gray;">false</span>:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">bool</span><span> isCSharpfun</span><span
+                                style="color: gray;">=</span><span style="color: blue;">true</span><span
+                                style="color: gray;">;</span>
+                            <br>
+                            <span style="color: blue; margin-left: 20px;">bool</span><span> isFishTasty</span><span
+                                style="color: gray;">=</span><span style="color: blue;">false</span><span
+                                style="color: gray;">;</span>
+                            <br>
+                            <span style="margin-left: 20px;">Console <span>.WriteLine(</span><span>
+                                    <span>isCSharpfun</span><span style="color: gray;">); // Outputs
+                                        True</span></span></span><br>
+                            <span style="margin-left: 20px;">Console <span>.WriteLine(</span><span>
+                                    <span>isFishTasty</span><span style="color: gray;">); // Outputs
+                                        False</span></span></span><br>
+                            <br><br>
+                        </div><br><br>
+                        <span>However, it is more common to return boolean values from boolean expressions, for
+                            conditional testing (see
+                            below).</span><br><br>
+                        <h4>Boolean Expression</h4>
+                        <span>A Boolean expression returns a boolean value: <span style="color: gray;">True</span> or
+                            <span style="color: gray;">False</span>, by comparing values/variables.</span><br><br>
+                        <span>This is useful to build logic, and find answers.</span><br><br>
+                        For example, you can use a comparison operator, such as the <b>greater than</b> (<span
+                            style="color: gray;">></span>) operator to find out if an
+                        expression (or a variable) is true: <br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">int</span><span> x</span><span
+                                style="color: gray;">=</span><span>10</span><span style="color: gray;">;</span>
+                            <br>
+                            <span style="color: blue; margin-left: 20px;">int</span><span> y</span><span
+                                style="color: gray;">=</span><span>9</span><span style="color: gray;">;</span>
+                            <br>
+                            <span style="margin-left: 20px;">Console <span>.WriteLine(</span><span>
+                                    <span>x</span><span style="color: green;">></span>y<span style="color: gray;">); //
+                                        returns True,
+                                        because 10 is higher than 9</span></span></span><br>
+                            <br><br>
+                        </div><br><br>
+                        <span>Or even easier:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">Console <span>.WriteLine(</span><span>
+                                    <span>10</span><span style="color: green;">></span>9<span style="color: gray;">); //
+                                        returns True,
+                                        because 10 is higher than 9</span></span></span><br>
+                            <br><br>
+                        </div><br><br>
+                        <span>In the examples below, we use the <b>equal to</b> (<span style="color: gray;">==</span>)
+                            operator to
+                            evaluate an
+                            expression:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">int</span><span> x</span><span
+                                style="color: gray;">=</span><span>10</span><span style="color: gray;">;</span>
+                            <br>
+                            <span style="margin-left: 20px;">Console <span>.WriteLine(</span><span>
+                                    <span>x</span><span style="color: green;">==</span>10<span style="color: gray;">);
+                                        // returns True,
+                                        because the value of x is equal to 10</span></span></span><br>
+                            <br><br>
+                        </div><br><br>
+
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">Console <span>.WriteLine(</span><span>
+                                    <span>10</span><span style="color: green;">==</span>15<span style="color: gray;">);
+                                        // returns
+                                        False, because 10 is not equal to 15</span></span></span><br>
+                            <br><br>
+                        </div><br><br>
+                        <h4>Real Life Example</h4>
+                        <span>Let's think of a "real life example" where we need to find out if a person is old enough
+                            to
+                            vote.</span><br><br>
+                        <span>In the example below, we use the <span style="color: gray;">>=</span> comparison operator
+                            to find out if
+                            the age (<span style="color: gray;">25</span>) is <b>greater than</b> OR
+                            <b>equal to</b> the voting age limit, which is set to <span
+                                style="color: gray;">18</span>:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: blue; margin-left: 20px;">int</span><span> myAge</span><span
+                                style="color: gray;">=</span><span>25</span><span style="color: gray;">;</span>
+                            <br>
+                            <span style="color: blue; margin-left: 20px;">int</span><span> votingAge</span><span
+                                style="color: gray;">=</span><span>18</span><span style="color: gray;">;</span>
+                            <br>
+                            <span style="margin-left: 20px;">Console <span>.WriteLine(</span><span>
+                                    <span>myAge</span><span style="color: green;">>=</span>votingAge<span
+                                        style="color: gray;">);</span></span></span><br>
+                            <br><br>
+                        </div><br><br>
+                        <span>Cool, right? An even better approach (since we are on a roll now), would be to wrap the
+                            code above in an
+                            <span style="color: gray;">if...else</span> statement, so we can perform different actions
+                            depending on the
+                            result:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;">Output "Old enough to vote!" if <span
+                                    style="color: gray;">myAge</span> is
+                                <b>greater than or equal</b> to <span style="color: gray;">18</span>.
+                                Otherwise output "Not old enough
+                                to vote.":</span><br><br>
+                            <span style="color: blue; margin-left: 20px;">int</span><span> myAge</span><span
+                                style="color: gray;">=</span><span>25</span><span style="color: gray;">;</span>
+                            <br>
+                            <span style="color: blue; margin-left: 20px;">int</span><span> votingAge</span><span
+                                style="color: gray;">=</span><span>18</span><span style="color: gray;">;</span>
+                            <br><br>
+                            <span style="color: blue; margin-left: 20px;">if </span><span
+                                style="color: gray;">(</span><span>myAge</span><span
+                                style="color: green;">>=</span>votingAge<span style="color: gray;">)</span><br>
+                            <span style="color: gray; margin-left: 20px;">{</span><br>
+                            <span style="margin-left: 20px;">Console <span>.WriteLine(</span><span>
+                                    <span style="color: green;">"Old enough to vote!"</span><span
+                                        style="color: gray;">);</span></span></span><br>
+                            <span style="color: gray; margin-left: 20px;">}</span><br>
+                            <span style="color: blue;margin-left: 20px;">else</span><br>
+                            <span style="color: gray; margin-left: 20px;">{</span><br>
+                            <span style="margin-left: 20px;">Console <span style="color: gray;">.WriteLine(</span><span>
+                                    <span style="color: green;">"20 is greater than 18"</span><span
+                                        style="color: gray;">);</span></span></span><br>
+                            <span style="color: gray; margin-left: 20px;">}</span><br>
+                            <br><br>
+                        </div><br><br>
+                        <div style="width: 100%; background: #ffffcc; padding: 10px;">
+                            <span>The boolean value of an expression is the basis for all C# comparisons and
+                                conditions.</span><br><br>
+                            <span>You will learn more about conditions (<a href="#">if...else</a>) in the next
+                                chapter.</span>
+                        </div><br>
+                    </div>
+
+                    <div class="example">
+                        <h4>Test Yourself With Quizzes</h4>
+                        <h5>Click Button to take quiz</h5><br>
+                        <a href="quizzes2.html"><button class="btn1">Get Started</button></a><br>
+                    </div>
+                    <br>
+    </div>
+    </div>
+    </section>
+
+
+
+</body>
+
+</html>

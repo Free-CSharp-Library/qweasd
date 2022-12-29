@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST YOURSELF NUMBER 2</title>
+    <link rel="stylesheet" href="blank.css">
+    <link rel="shortcut icon" type="x-icon" href="./resources pics/icon copy.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/139bb7fa0d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/39ac9c7ed0.js" crossorigin="anonymous"></script>
+    <script src="showans.js"></script>
+    <script src="button.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="navigation">
+        <div class="side-nav">
+            <a href="index.html" class="logo">
+                <img src="./resources pics/icon.png" class="img-logo">
+                <p class="title">FREE C# LIBRARY</p>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span>HOME</span></a></li>
+                <li><a href="gallery.html#tutorial"><i class="fa-solid fa-brain"></i><span>LEARN</span></a></li>
+                <li><a href="quiz-container.html"><i class="fa-sharp fa-solid fa-pencil"></i><span>QUIZZES</span></a>
+                </li>
+                <li><a href="gallery.html#about"><i class='bx bxs-info-circle'></i><span>ABOUT</span></a>
+                </li>
+                <li><a href="gallery.html#feedback"><i class="fa-solid fa-comment"></i><span>FEEDBACK</span></a></li>
+                <li><a href="notbook.html"><i class='bx bxs-book-content'></i><span>NOTEBOOK</span></a></li>
+                <div class="active"></div>
+            </ul>
+        </div>
+
+        <button onclick="history.back()" class="back">
+            < </button>
+                <div class="example" id="panglima">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 2</h1>
+                    </div>
+                    <h1>C# User Input</h1>
+                    <span>Fill in the missing parts to get user input, stored in the variable userName:</span><br><br>
+                    <div class="h1">
+                        Console.WriteLine("Enter username:"); <br>
+                        <input type="text" style="width: 45px;" id="string5">
+                        userName = Console.
+                        <input type="text" style="width: 70px;" id="ReadLine"><br>Console.WriteLine("Username is: " +
+                        userName);
+                    </div><br>
+                    <button class="btn1" onclick="E()" id="submit5">Submit</button><button class="btn1" id="next5"
+                        onclick="next5()">Next</button>
+                    <button class="btn1" id="showbtn5" onclick="five()">Show answer</button><button class="btn1"
+                        id="hide5" onclick="five1()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function E() {
+                        var string5 = document.getElementById("string5").value;
+                        var readline = document.getElementById("ReadLine").value;
+                        if (string5 == "string" && readline == "ReadLine()") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+                <div class="example" id="panganim">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 2</h1>
+                    </div>
+                    <h1>C# Operators</h1>
+                    <span>Multiply 10 with 5, and print the result.</span><br><br>
+                    <div class="h1">
+                        Console.WriteLine(10 <input type="text" style="width: 10px;" id="mult"> 5);
+                    </div><br>
+                    <button class="btn1" id="prev6" onclick="prev6()">Previous</button>
+                    <button class="btn1" onclick="F()" id="submit6">Submit</button><button class="btn1" id="next6"
+                        onclick="next6()">Next</button>
+                    <button class="btn1" id="showbtn6" onclick="six()">Show answer</button><button class="btn1"
+                        id="hide6" onclick="six1()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function F() {
+                        var mult = document.getElementById("mult").value;
+                        if (mult == "*") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+                <div class="example" id="pangpito">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 2</h1>
+                    </div>
+                    <h1>C# Math</h1>
+                    <span>Use the correct method to print the square root of x.</span><br><br>
+                    <div class="h1">
+                        Console.WriteLine(Math. <input type="text" id="Sqrt" style="width: 30px;"> (64));
+                    </div><br>
+                    <button class="btn1" id="prev7" onclick="prev7()">Previous</button>
+                    <button class="btn1" onclick="G()" id="submit7">Submit</button><button class="btn1" id="next7"
+                        onclick="next7()">Next</button>
+                    <button class="btn1" id="showbtn7" onclick="seven()">Show answer</button><button class="btn1"
+                        id="hide7" onclick="seven1()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function G() {
+                        var Sqrt = document.getElementById("Sqrt").value;
+                        if (Sqrt == "Sqrt") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+                <div class="example" id="pangwalo">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 2</h1>
+                    </div>
+                    <h1>C# Strings</h1>
+                    <span>Use the correct operator to concatenate two strings:</span><br><br>
+                    <div class="h1">
+                        string firstName = "John "; <br>
+                        string lastName = "Doe"; <br>
+                        string name = firstName <input type="text" id="plus" style="width: 10px;"> lastName;<br>
+                        Console.WriteLine(name);
+                    </div><br>
+                    <button class="btn1" id="prev8" onclick="prev8()">Previous</button>
+                    <button class="btn1" onclick="H()" id="submit8">Submit</button><button class="btn1" id="next8"
+                        onclick="next8()">Next</button>
+                    <button class="btn1" id="showbtn8" onclick="eight()">Show answer</button><button class="btn1"
+                        id="hide8" onclick="eight1()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function H() {
+                        var plus = document.getElementById("plus").value;
+                        if (plus == "+") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+                <div class="example" id="pangsiyam">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 2</h1>
+                    </div>
+                    <h1>C# Booleans</h1>
+                    <span>Fill in the missing parts to print the value True:</span><br><br>
+                    <div class="h1">
+                        int x = 10; <br>
+                        int y = 9; <br>
+                        Console.WriteLine( <input type="text" id="x" style="width: 10px;"> <input type="text"
+                            id="greater" style="width: 10px;"> <input type="text" id="y" style="width: 10px;"> );
+                    </div><br>
+                    <button class="btn1" id="prev9" onclick="prev9()">Previous</button>
+                    <button class="btn1" onclick="I()" id="submit9">Submit</button><button class="btn1" id="next9"
+                        onclick="next9()" style="color: white;"><a href="#" style="color: white;">Go To Test
+                            Yourself Number 3</a></button>
+                    <button class="btn1" id="showbtn9" onclick="nine()">Show answer</button><button class="btn1"
+                        id="hide9" onclick="nine1()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function I() {
+                        var x = document.getElementById("x").value;
+                        var greater = document.getElementById("greater").value;
+                        var y = document.getElementById("y").value;
+                        if (x == "x" && greater == ">" && y == "y") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+</body>
+
+</html>

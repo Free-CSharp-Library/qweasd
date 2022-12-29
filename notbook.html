@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/139bb7fa0d.js" crossorigin="anonymous"></script>
+    <link href="notbook_Style.css" rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="notbook-sample.js"></script>
+    <link rel="shortcut icon" type="x-icon" href="./resources pics/icon.png">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="navigation">
+        <div class="side-nav">
+            <a href="index.html" class="logo">
+                <img src="./resources pics/icon.png" class="img-logo">
+                <p class="title">FREE C# LIBRARY</p>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span>HOME</span></a></li>
+                <li><a href="gallery.html#tutorial"><i class="fa-solid fa-brain"></i><span>LEARN</span></a></li>
+                <li><a href="quiz-container.html"><i class="fa-sharp fa-solid fa-pencil"></i><span>QUIZZES</span></a>
+                </li>
+                <li><a href="gallery.html#about"><i class='bx bxs-info-circle'></i><span>ABOUT</span></a>
+                </li>
+                <li><a href="gallery.html#feedback"><i class="fa-solid fa-comment"></i><span>FEEDBACK</span></a></li>
+                <li><a href="notbook.html"><i class='bx bxs-book-content'></i><span>NOTEBOOK</span></a></li>
+                <div class="active"></div>
+            </ul>
+        </div>
+
+        <div class="notebook">
+            <div class="codes">
+                <p class="hi">Average</p>
+                <p id="table" class="table">
+                    Console.Write("How many number: ");<br>
+                    int numbers = int.Parse(Console.ReadLine());<br>
+                    double num = 0;<br>
+                    for (int i = 0; i < numbers; i++) {<br>
+                        Console.Write("Enter number: ");<br>
+                        num += double.Parse(Console.ReadLine());<br>
+
+                        }
+                        double average = num / numbers;
+
+                        Console.WriteLine("Average: " + average);
+                </p>
+            </div>
+            <div class="codes">
+                <p class="hi">Hello</p>
+                <p id="table" class="table">
+
+                </p>
+            </div>
+            <div class="codes">
+                <p class="hi" id="multi">Multiplication Table</p>
+                <p id="table" class="table">
+                    Console.Write("Enter Number: ");<br>
+                    int num1 = int.Parse(Console.ReadLine());<br>
+
+                    for(int i = 0; i <= 100; i++) {<br>
+                        int num2 = num1 * i;<br>
+                        string sum = Convert.ToString(num1 + "*" + i);<br>
+                        Console.WriteLine(sum + " = " +num2);
+                </p>
+            </div>
+            <div class="codes">
+                <p class="hi">Multiplying The Sum of Two Array</p>
+                <p id="table" class="table">
+                    Console.WriteLine("Find the sum of this Array: {1,2,3,4,5,6,7,8,9} and
+                    {10,11,12,13,14,15,16,17,18,19}");<br>
+                    int[] nums1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };<br>
+                    int[] nums2 = {10,11,12,13,14,15,16,17,18,19};<br>
+                    int sum1 = 0;<br>
+                    int sum2 = 0;<br>
+                    for (int i = 0; i < nums1.Length; i++) {<br>
+                        sum1 += nums1[i];
+                        }
+                        for(int i = 0; i < nums2.Length; i++) {<br>
+                            sum2 += nums2[i];
+                            }<br>
+                            Console.WriteLine("Product = " + sum1*sum2);
+                </p>
+            </div>
+            <div class="codes1">
+                <p class="hi">Calculator</p>
+                <p id="table" class="table">
+                    Console.Write("Enter Firt Number: ");<br>
+                    int num1 = int.Parse(Console.ReadLine());<br>
+                    Console.Write("Enter Operation Symbol: ");<br>
+                    string symbol = Console.ReadLine();<br>
+                    Console.Write("Enter Second Number: ");<br>
+                    int num2 = int.Parse(Console.ReadLine());<br>
+
+                    int sum = 0;<br>
+
+                    if(symbol == "+"){<br>
+                    sum = num1 + num2;
+                    }else if(symbol == "-"){<br>
+                    sum = num1 - num2;
+                    }else if(symbol == "*"){<br>
+                    sum = num1 * num2;
+                    }else if(symbol == "/"){<br>
+                    sum = num1 / num2;
+                    }<br>
+                    Console.WriteLine(sum);
+                </p>
+            </div>
+            <div class="codes2">
+                <p class="hi">Register and Login</p>
+                <p id="table" class="table">
+                    Console.WriteLine("Registration");<br>
+                    Console.Write("Write Username: ");<br>
+                    string username = Console.ReadLine();<br>
+                    Console.Write("Write Password: ");<br>
+                    string password = Console.ReadLine();<br>
+                    Console.Write("Re-write Password: ");<br>
+                    string rePassword = Console.ReadLine();<br>
+
+                    if (password != rePassword)<br>
+                    {
+
+                    }
+                    else<br>
+                    {
+
+                    Console.WriteLine("Login");<br>
+                    Console.Write("Username: ");<br>
+                    string inputUsername = Console.ReadLine();<br>
+                    Console.Write("Password: ");<br>
+                    string inputPassword = Console.ReadLine();<br>
+
+                    if (inputUsername == username && inputPassword == password)
+                    {<br>
+                    Console.WriteLine("Welcome");
+                    }
+                    else
+                    {<br>
+                    Console.WriteLine("Error");
+                    }
+
+                    }
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>

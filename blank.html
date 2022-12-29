@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Yourself Number 1</title>
+    <link rel="stylesheet" href="blank.css">
+    <link rel="shortcut icon" type="x-icon" href="./resources pics/icon copy.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/139bb7fa0d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/39ac9c7ed0.js" crossorigin="anonymous"></script>
+    <script src="showans.js"></script>
+    <script src="button.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="navigation">
+        <div class="side-nav">
+            <a href="index.html" class="logo">
+                <img src="./resources pics/icon.png" class="img-logo">
+                <p class="title">FREE C# LIBRARY</p>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span>HOME</span></a></li>
+                <li><a href="gallery.html#tutorial"><i class="fa-solid fa-brain"></i><span>LEARN</span></a></li>
+                <li><a href="quiz-container.html"><i class="fa-sharp fa-solid fa-pencil"></i><span>QUIZZES</span></a>
+                </li>
+                <li><a href="gallery.html#about"><i class='bx bxs-info-circle'></i><span>ABOUT</span></a>
+                </li>
+                <li><a href="gallery.html#feedback"><i class="fa-solid fa-comment"></i><span>FEEDBACK</span></a></li>
+                <li><a href="notbook.html"><i class='bx bxs-book-content'></i><span>NOTEBOOK</span></a></li>
+                <div class="active"></div>
+            </ul>
+        </div>
+
+        <button onclick="history.back()" class="back">
+            < </button>
+                <div class="example" id="una">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 1</h1>
+                    </div>
+                    <h1>C# Syntax</h1>
+                    <span>Insert the missing part of the code below to output "Hello World!".</span><br><br>
+                    <div class="h1">
+                        static void
+                        <input type="text" style="width: 40px;" id="Main">
+                        (string[] args) <br>{ <br>
+                        &emsp;
+                        <input type="text" style="width: 60px;" id="Console">.<input type="text" style="width: 70px;"
+                            id="WriteLine">("Hello World!"); <br>}
+                    </div><br>
+                    <button class="btn1" onclick="A()" id="submit">Submit</button><button class="btn1" id="nextuna"
+                        onclick="nextuna()">Next</button>
+                    <button class="btn1" id="showbtn" onclick="una()">Show answer</button><button class="btn1" id="hide"
+                        onclick="pangalawa()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function A() {
+                        var main = document.getElementById("Main").value;
+                        var console = document.getElementById("Console").value;
+                        var writeline = document.getElementById("WriteLine").value;
+                        if (main == "Main" && console == "Console" && writeline == "WriteLine") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+                <div class="example" id="pangalawa">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 1</h1>
+                    </div>
+                    <h1>C# Comments</h1>
+                    <span>Comments in C# are written with special characters. Insert the missing parts:</span><br><br>
+                    <div class="h1">
+                        <input type="text" id="comment" style="width: 15px;">This is a single-line comment <br>
+                        <input type="text" id="comment2" style="width: 20px;">This is a multi-line comment<input
+                            type="text" id="comment3" style="width: 20px;">
+                    </div><br>
+                    <button class="btn1" id="prev1" onclick="prev1()">Previous</button>
+                    <button class="btn1" onclick="B()" id="submit1">Submit</button><button class="btn1"
+                        id="nextpangalawa" onclick="nextpangalawa()">Next</button>
+                    <button class="btn1" id="showbtn1" onclick="pangatlo()">Show answer</button><button class="btn1"
+                        id="hide1" onclick="pangapat()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function B() {
+                        var c1 = document.getElementById("comment").value;
+                        var c2 = document.getElementById("comment2").value;
+                        var c3 = document.getElementById("comment3").value;
+                        if (c1 == "//" && c2 == "/*" && c3 == "*/") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+                <div class="example" id="pangatlo">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 1</h1>
+                    </div>
+                    <h1>C# Variable</h1>
+                    <span>Create a variable named myName and assign the value "John" to it.</span><br><br>
+                    <div class="h1">
+                        <input type="text" id="string" style="width: 45px;">
+                        <input type="text" id="myname" style="width: 70px;"> = "<input type="text" id="john"
+                            style="width: 35px;">";
+                    </div><br>
+
+                    <button class="btn1" id="prev2" onclick="prev2()">Previous</button>
+                    <button class="btn1" onclick="C()" id="submit2">Submit</button><button class="btn1"
+                        id="nextpangatlo" onclick="nextpangatlo()">Next</button>
+                    <button class="btn1" id="showbtn2" onclick="panglima()">Show answer</button><button class="btn1"
+                        id="hide2" onclick="panganim()">Hide
+                        answer</button><br>
+
+
+                </div>
+                <script>
+                    function C() {
+                        var string = document.getElementById("string").value;
+                        var myname = document.getElementById("myname").value;
+                        var john = document.getElementById("john").value;
+                        if (string == "string" && myname == "myName" && john == "John") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+                <div class="example" id="pangapat">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 1</h1>
+                    </div>
+                    <h1>C# Data Types</h1>
+                    <span>Add the correct data type for the following variables:</span><br><br>
+                    <div class="h1">
+                        <input type="text" id="int1" style="width: 25px;">myNum = 9;<br>
+                        <input type="text" id="double1" style="width: 50px;">myDoubleNum = 8.99;<br>
+                        <input type="text" id="char1" style="width: 35px;">myLetter = 'A';<br>
+                        <input type="text" id="bool1" style="width: 35px;">myBoolean = false;<br>
+                        <input type="text" id="string1" style="width: 45px;">myText = "Hello World";
+                    </div><br>
+
+                    <button class="btn1" id="prev3" onclick="prev3()">Previous</button>
+                    <button class="btn1" onclick="D()" id="submit3">Submit</button><button class="btn1"
+                        id="nextpangapat" onclick="nextpangapat()" style="color: white;"><a href="blank1.html"
+                            style="color: white;">Go To Test
+                            Yourself Number 2</a>
+                    </button>
+                    <button class="btn1" id="showbtn3" onclick="pangpito()">Show answer</button><button class="btn1"
+                        id="hide3" onclick="pangwalo()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function D() {
+                        var int1 = document.getElementById("int1").value;
+                        var double1 = document.getElementById("double1").value;
+                        var char1 = document.getElementById("char1").value;
+                        var bool1 = document.getElementById("bool1").value;
+                        var string1 = document.getElementById("string1").value;
+                        if (int1 == "int" && double1 == "double" && char1 == "char" && bool1 == "bool" && string1 == "string") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+    </div><br><br><br><br>
+
+</body>
+
+</html>

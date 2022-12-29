@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/39ac9c7ed0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/139bb7fa0d.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="x-icon" href="./resources pics/icon.png">
+</head>
+
+<body>
+    <br>
+    <!--Navigation bar-->
+    <div class="navigation">
+        <div class="side-nav">
+            <a href="index.html" class="logo">
+                <img src="./resources pics/icon.png" class="img-logo">
+                <p class="title">FREE C# LIBRARY</p>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span>HOME</span></a></li>
+                <li><a href="gallery.html#tutorial"><i class="fa-solid fa-brain"></i><span>LEARN</span></a></li>
+                <li><a href="quiz-container.html"><i class="fa-sharp fa-solid fa-pencil"></i><span>QUIZZES</span></a>
+                </li>
+                <li><a href="gallery.html#about"><i class='bx bxs-info-circle'></i><span>ABOUT</span></a>
+                </li>
+                <li><a href="gallery.html#feedback"><i class="fa-solid fa-comment"></i><span>FEEDBACK</span></a></li>
+                <li><a href="notbook.html"><i class='bx bxs-book-content'></i><span>NOTEBOOK</span></a></li>
+                <div class="active"></div>
+            </ul>
+        </div>
+
+        <div class="gallery" id="tutorial">
+            <div class="gallery-box">
+                <img src="./resources pics/1.gif" class="gif1">
+                <h3 class="tit">Tutorial Number 1</h3><br>
+                <span class="des"> <a href="vid.html#intro"> C# Intro </a></span><br>
+                <span class="des"> <a href="vid.html#syntax"> C# Syntax </a></span><br>
+                <span class="des"><a href="vid.html#output"> C# Output</a></span><br>
+                <span class="des"><a href="vid.html#comment"> C# Comments</a></span><br>
+                <span class="des"><a href="vid.html#variable"> C# Variables</a></span><br>
+                <span class="des"> <a href="vid.html#datatype"> C# Data Types</a></span><br><br><br>
+                <a href="vid.html"><button class="btn1">Get Started</button></a>
+            </div>
+
+            <div class="gallery-box">
+                <img src="./resources pics/2.gif" class="gif1">
+                <h3 class="tit">Tutorial Number 2</h3><br>
+                <span class="des"><a href="vid1.html#typecasting">C# Type Casting</a></span><br>
+                <span class="des"><a href="vid1.html#userinput">C# User Input</a></span><br>
+                <span class="des"><a href="vid1.html#operators">C# Operators</a></span><br>
+                <span class="des"><a href="vid1.html#math">C# Math</a></span><br>
+                <span class="des"><a href="vid1.html#strings">C# Strings</a></span><br>
+                <span class="des"><a href="vid1.html#booleans">C# Booleans</a></span><br><br><br>
+                <a href="vid1.html"><button class="btn1">Get Started</button></a><br><br><br>
+            </div>
+
+            <div class="gallery-box">
+                <img src="./resources pics/3.gif" class="gif1">
+                <h3 class="tit">Tutorial Number 3</h3><br>
+                <span class="des"><a href="vid2.html#if-else">C# If..Else</a></span><br>
+                <span class="des"><a href="vid2.html#switch">C# Switch</a></span><br>
+                <span class="des"><a href="vid2.html#while">C# While Loop</a></span><br>
+                <span class="des"><a href="vid2.html#for">C# For Loop</a></span><br>
+                <span class="des"><a href="vid2.html#break-and-continue">C# Break and Continue</a></span><br>
+                <span class="des"><a href="vid2.html#array">C# Arrays</a></span><br>
+                <br><br>
+                <a href="vid2.html"><button class="btn1">Get Started</button></a><br><br><br>
+            </div>
+
+        </div>
+
+
+
+        <!--about-->
+        <div class="about" id="about">
+            <h1 class="about-h1">About Website</h1>
+            <div class="about-container">
+                <span class="about-span">
+                    <center>The Free C# Library is a great resource for ICT students at STI College San
+                        Pablo looking
+                        to access a wide range of open source C# libraries. It provides access to a variety of useful
+                        tools
+                        and libraries, including video tutorials, codes, and many more. With the Free C# Library, ICT
+                        students at STI College San Pablo can quickly and easily find the libraries they need to build
+                        powerful
+                        applications.
+                </span></center>
+            </div>
+        </div>
+
+
+
+        <!--feedback-->
+        <div class="form" id="feedback">
+            <h1 class="h1feedback">Feedback</h1>
+            <form method="post">
+                <input type="text" placeholder="Enter name" id="name" autocomplete="off" required>
+                <input type="email" placeholder="Enter email" id="subject" autocomplete="off" required>
+                <textarea id="message" placeholder="Enter message" cols="30" rows="10" required
+                    style="resize: none;"></textarea>
+                <button type="reset" name="submit" id="btn" onclick="A()">Send</button>
+                <input type="email" class="feedback-email" id="email" autocomplete="off"
+                    value="lopezmasalongar@gmail.com" readonly>
+            </form>
+        </div><br><br><br>
+    </div>
+
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function (e) {
+        e.preventDefault()
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+        var body = "Name: " + name + "<br> Email: " + subject + "<br> Subject: " + name + "<br> Message: " + message;
+        if (name != "" || email != "" || message != "") {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "lopezmasalongar@gmail.com",
+                Password: "6102587781A7238D61205B4C951E448E52A8",
+                To: 'lopezmasalongar@gmail.com',
+                From: email,
+                Subject: name,
+                Body: body
+            }).then(
+                message => swal({
+                    title: "Submitted",
+                    text: "Your concern has been submitted",
+                    icon: "success",
+                    button: "Ok",
+                }));
+            var name = document.getElementById('name').value = "";
+            var email = document.getElementById('email').value = "";
+            var subject = document.getElementById('subject').value = "";
+            var message = document.getElementById('message').value = "";
+        }
+        else {
+            swal({
+                title: "Error",
+                text: "Your concern has not been submitted.",
+                icon: "error",
+                button: "Ok",
+            });
+
+        };
+    });
+</script>
+
+</html>

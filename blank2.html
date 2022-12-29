@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST YOURSELF NUMBER 3</title>
+    <link rel="stylesheet" href="blank.css">
+    <link rel="shortcut icon" type="x-icon" href="./resources pics/icon copy.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/139bb7fa0d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/39ac9c7ed0.js" crossorigin="anonymous"></script>
+    <script src="showans.js"></script>
+    <script src="button.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="navigation">
+        <div class="side-nav">
+            <a href="index.html" class="logo">
+                <img src="./resources pics/icon.png" class="img-logo">
+                <p class="title">FREE C# LIBRARY</p>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span>HOME</span></a></li>
+                <li><a href="gallery.html#tutorial"><i class="fa-solid fa-brain"></i><span>LEARN</span></a></li>
+                <li><a href="quiz-container.html"><i class="fa-sharp fa-solid fa-pencil"></i><span>QUIZZES</span></a>
+                </li>
+                <li><a href="gallery.html#about"><i class='bx bxs-info-circle'></i><span>ABOUT</span></a>
+                </li>
+                <li><a href="gallery.html#feedback"><i class="fa-solid fa-comment"></i><span>FEEDBACK</span></a></li>
+                <li><a href="notbook.html"><i class='bx bxs-book-content'></i><span>NOTEBOOK</span></a></li>
+                <div class="active"></div>
+            </ul>
+        </div>
+
+        <button onclick="history.back()" class="back">
+            < </button>
+                <div class="example" id="sampu">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 3</h1>
+                    </div>
+                    <h1>C# If..Else</h1>
+                    <span>Print "Hello World" if x is greater than y.</span><br><br>
+                    <div class="h1">
+                        int x = 50; <br>
+                        int y = 10; <br>
+                        <input type="text" id="if" style="width: 15px;"> ( x <input type="text" id="greater1"
+                            style="width: 10px;"> y ) <br>
+                        { <br>
+                        &emsp;Console.WriteLine("Hello World");<br>
+                        }
+                    </div><br>
+                    <button class="btn1" onclick="J()" id="submit10">Submit</button><button class="btn1" id="next10"
+                        onclick="next10()">Next</button>
+                    <button class="btn1" id="showbtn10" onclick="ten()">Show answer</button><button class="btn1"
+                        id="hide10" onclick="ten1()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function J() {
+                        var if1 = document.getElementById("if").value;
+                        var greater1 = document.getElementById("greater1").value;
+                        if (if1 == "if" && greater1 == ">") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+
+                <div class="example" id="eleven">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 3</h1>
+                    </div>
+                    <h1>C# Switch</h1>
+                    <span>Insert the missing parts to complete the following switch statement.</span><br><br>
+                    <div class="h1">
+                        int day = 2; <br>
+                        switch( <input type="text" id="day" style="width: 30px;"> ) <br>
+                        { <br>
+                        &emsp; <input type="text" id="case1" style="width: 35px;"> 1: <br>
+                        &emsp;&emsp;Console.WriteLine("Monday"); <br>
+                        &emsp;&emsp;break; <br>
+                        &emsp; <input type="text" id="case2" style="width: 35px;"> 2: <br>
+                        &emsp;&emsp;Console.WriteLine("Tuesday");<br>
+                        &emsp;&emsp;<input type="text" id="break" style="width: 40px;"> ;<br>
+                        }
+                    </div><br>
+                    <button class="btn1" id="prev11" onclick="prev11()">Previous</button>
+                    <button class="btn1" onclick="K()" id="submit11">Submit</button><button class="btn1" id="next11"
+                        onclick="next11()">Next</button>
+                    <button class="btn1" id="showbtn11" onclick="eleven()">Show answer</button><button class="btn1"
+                        id="hide11" onclick="eleven1()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function K() {
+                        var case1 = document.getElementById("case1").value;
+                        var day = document.getElementById("day").value;
+                        var case2 = document.getElementById("case2").value;
+                        var break1 = document.getElementById("break").value;
+                        if (case1 == "case" && day == "day" && case2 == "case" && break1 == "break") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+                <div class="example" id="twelve">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 3</h1>
+                    </div>
+                    <h1>C# While Loop</h1>
+                    <span>Print i as long as i is less than 6.</span><br><br>
+                    <div class="h1">
+                        int i = 1; <br>
+                        <input type="text" id="while" style="width: 40px;"> ( i <input type="text" id="less"
+                            style="width: 12px;"> 6 ) <br>
+                        { <br>
+                        &emsp;Console.WriteLine(i); <br>
+                        &emsp;<input type="text" id="i++" style="width: 25px;"><br>
+                        }
+                    </div><br>
+                    <button class="btn1" id="prev12" onclick="prev12()">Previous</button>
+                    <button class="btn1" onclick="L()" id="submit12">Submit</button><button class="btn1" id="next12"
+                        onclick="next12()">Next</button>
+                    <button class="btn1" id="showbtn12" onclick="twelve()">Show answer</button><button class="btn1"
+                        id="hide12" onclick="twelve1()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function L() {
+                        var while1 = document.getElementById("while").value;
+                        var less = document.getElementById("less").value;
+                        var iplusplus = document.getElementById("i++").value;
+                        if (while1 == "while" && less == "<" && iplusplus == "i++") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+                <div class="example" id="thirteen">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 3</h1>
+                    </div>
+                    <h1>C# For Loop</h1>
+                    <span>Use a for loop to print "Yes" 5 times:</span><br><br>
+                    <div class="h1">
+                        <input type="text" id="for" style="width: 25px;"> ( int i = 0; i < 5; <input type="text"
+                            id="i++1" style="width: 25px;"> ) <br>
+                            { <br>
+                            &emsp;Console.WriteLine("Yes"); <br>
+                            }
+                    </div><br>
+                    <button class="btn1" id="prev13" onclick="prev13()">Previous</button>
+                    <button class="btn1" onclick="M()" id="submit13">Submit</button><button class="btn1" id="next13"
+                        onclick="next13()">Next</button>
+                    <button class="btn1" id="showbtn13" onclick="thirteen()">Show answer</button><button class="btn1"
+                        id="hide13" onclick="thirteen1()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function M() {
+                        var for1 = document.getElementById("for").value;
+                        var iplusplus1 = document.getElementById("i++1").value;
+                        if (for1 == "for" && iplusplus1 == "i++") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+                <div class="example" id="last">
+                    <div class="example1">
+                        <h1>TEST YOURSELF NUMBER 3</h1>
+                    </div>
+                    <h1>C# Arrays</h1>
+                    <span>Create an array of type string called cars.</span><br><br>
+                    <div class="h1">
+                        <input type="text" id="string" style="width: 50px;"> <input type="text" id="cars"
+                            style="width: 30px;"> = {"Volvo",
+                        "BMW", "Ford",
+                        "Mazda"};
+                    </div><br>
+                    <button class="btn1" id="prev14" onclick="prev14()">Previous</button>
+                    <button class="btn1" onclick="N()" id="submit14">Submit</button>
+                    <button class="btn1" id="showbtn14" onclick="last()">Show answer</button><button class="btn1"
+                        id="hide14" onclick="last1()">Hide
+                        answer</button><br>
+                </div>
+                <script>
+                    function N() {
+                        var string = document.getElementById("string").value;
+                        var cars = document.getElementById("cars").value;
+                        if (string == "string[]" && cars == "cars") {
+                            alert("Correct");
+                        } else {
+                            alert("Something wrong");
+                        }
+                    }
+                </script>
+
+</body>
+
+</html>

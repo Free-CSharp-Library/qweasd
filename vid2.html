@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Number 3</title>
+    <link rel="stylesheet" href="vid.css">
+    <script src="https://kit.fontawesome.com/39ac9c7ed0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/139bb7fa0d.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="x-icon" href="./resources pics/icon copy.png">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="navigation">
+        <div class="side-nav">
+            <a href="index.html" class="logo">
+                <img src="./resources pics/icon.png" class="img-logo">
+                <p class="title">FREE C# LIBRARY</p>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span>HOME</span></a></li>
+                <li><a href="gallery.html#tutorial"><i class="fa-solid fa-brain"></i><span>LEARN</span></a></li>
+                <li><a href="quiz-container.html"><i class="fa-sharp fa-solid fa-pencil"></i><span>QUIZZES</span></a>
+                </li>
+                <li><a href="gallery.html#about"><i class='bx bxs-info-circle'></i><span>ABOUT</span></a>
+                </li>
+                <li><a href="gallery.html#feedback"><i class="fa-solid fa-comment"></i><span>FEEDBACK</span></a></li>
+                <li><a href="notbook.html"><i class='bx bxs-book-content'></i><span>NOTEBOOK</span></a></li>
+                <div class="active"></div>
+            </ul>
+        </div>
+
+        <section class="tutorial" id="tutorial">
+            <button onclick="history.back()" class="back">
+                < </button>
+                    <div class="vid">
+
+                        <video width="900" height="auto" controls class="vid1">
+                            <source src="./resources pics/if else.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="example" id="if-else">
+                        <center>
+                            <h1>C# If ... Else</h1>
+                        </center>
+                        <h4>C# Conditions and If Statements</h4>
+                        <span>C# supports the usual logical conditions from mathematics:</span><br><br>
+                        <span>• Less than: <span> a < b </span></span><br>
+                            <span>• Less than or equal to: <span> a <= b </span></span><br>
+                                <span>• Greater than: <span> a > b </span></span><br>
+                                <span>• Greater than or equal to: <span> a >= b </span></span><br>
+                                <span>• Equal to: <span> a == b </span></span><br>
+                                <span>• Not Equal to: <span> a != b </span></span></span><br><br>
+                            <span>You can use these conditions to perform different actions for different
+                                decisions.</span><br><br>
+                            <span>C# has the following conditional statements:</span><br><br>
+                            <span>• Use if to specify a block of code to be executed, if a specified condition is
+                                true</span><br>
+                            <span>• Use else to specify a block of code to be executed, if the same condition is
+                                false</span><br>
+                            <span>• Use else if to specify a new condition to test, if the first condition is
+                                false</span><br>
+                            <span>• Use switch to specify many alternative blocks of code to be executed</span><br><br>
+                            <h4>The if Statement</h4>
+                            <span>Use the <span style="color: gray;">if</span> statement to specify a block of C# code
+                                to be executed if a condition is <span style="color: gray;">True</span>.</span><br><br>
+                            <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                                <h2 style="margin: 20px;">Syntax</h2>
+                                <span style="color: blue; margin-left: 20px;">if </span><span
+                                    style="color: gray;">(</span><span>condition</span><span
+                                    style="color: gray;">)</span><br>
+                                <span style="color: gray; margin-left: 20px;">{</span><br>
+                                <span style="color: gray; margin-left: 20px;">// block of code to be executed if the
+                                    condition is
+                                    True</span>
+                        </span></span><br>
+                        <span style="color: gray; margin-left: 20px;">}</span><br>
+                        <br><br>
+                    </div><br><br>
+                    <div style="width: 100%; background: #ffffcc; padding: 10px;">
+                        <span>Note that <span style="color: gray;">if</span> is in lowercase letters. Uppercase
+                            letters (If or IF) will generate an error.</span>
+                    </div><br><br>
+                    <span>In the example below, we test two values to find out if 20 is greater than 18. If the
+                        condition is <span style="color: gray;">True</span>, print some text:</span><br><br>
+                    <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                        <h2 style="margin: 20px;">Example</h2>
+                        <span style="color: blue; margin-left: 20px;">if </span><span
+                            style="color: gray;">(</span><span>20 <span style="color: green;">></span>18
+                        </span><span style="color: gray;">)</span><br>
+                        <span style="color: gray; margin-left: 20px;">{</span><br>
+                        <span style="margin-left: 20px;">Console <span style="color: gray;">.WriteLine(</span><span>
+                                <span style="color: green;">"20 is greater than 18"</span><span
+                                    style="color: gray;">);</span></span></span><br>
+                        <span style="color: gray; margin-left: 20px;">}</span><br>
+                        </span></span>
+                        <br><br>
+                    </div><br><br>
+                    <span>We can also test variables:</span><br><br>
+                    <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                        <h2 style="margin: 20px;">Example</h2>
+                        <span style="color: blue; margin-left: 20px;">int</span><span> x</span><span
+                            style="color: gray;">=</span><span>20</span><span style="color: gray;">;</span><br>
+                        <span style="color: blue; margin-left: 20px;">int</span><span> y</span><span
+                            style="color: gray;">=</span><span>18</span><span style="color: gray;">;</span><br>
+                        <span style="color: blue; margin-left: 20px;">if </span><span
+                            style="color: gray;">(</span><span>x <span style="color: green;">></span>y
+                        </span><span style="color: gray;">)</span><br>
+                        <span style="color: gray; margin-left: 20px;">{</span><br>
+                        <span style="margin-left: 20px;">Console <span style="color: gray;">.WriteLine(</span><span>
+                                <span style="color: green;">"x is greater than y"</span><span
+                                    style="color: gray;">);</span></span></span><br>
+                        <span style="color: gray; margin-left: 20px;">}</span><br>
+                        </span></span>
+                        <br><br>
+                    </div><br><br>
+                    <h5>Example explained</h5>
+                    <span>In the example above we use two variables, <b>x</b> and <b>y</b>, to test whether x is greater
+                        than y (using
+                        the <span style="color: gray;">></span> operator). As x is 20, and y is 18, and we know that 20
+                        is greater than 18, we print to
+                        the screen that "x is greater than y".</span><br><br>
+                    <h4>The else Statement</h4>
+                    <span>Use the <span style="color: gray;">else</span> statement to specify a block of code to be
+                        executed if the condition is
+                        <span style="color: gray;">False</span>.</span><br><br>
+                    <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                        <h2 style="margin: 20px;">Syntax</h2>
+                        <span style="color: blue; margin-left: 20px;">if </span><span
+                            style="color: gray;">(</span><span>condition</span><span style="color: gray;">)</span><br>
+                        <span style="color: gray; margin-left: 20px;">{</span><br>
+                        <span style="color: gray; margin-left: 20px;">// block of code to be executed if the condition
+                            is True</span><br>
+                        <span style="color: gray; margin-left: 20px;">}</span><br>
+                        <span style="color: blue;margin-left: 20px;">else</span><br>
+                        <span style="color: gray; margin-left: 20px;">{</span><br>
+                        <span style="color: gray; margin-left: 20px;">// block of code to be executed if the condition
+                            is False</span><br>
+                        <span style="color: gray; margin-left: 20px;">}</span><br>
+                        <br><br>
+                    </div><br><br>
+                    <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                        <h2 style="margin: 20px;">Example</h2>
+                        <span style="color: blue; margin-left: 20px;">int</span><span> x</span><span
+                            style="color: gray;">=</span><span>20</span><span style="color: gray;">;</span><br>
+                        <span style="color: blue; margin-left: 20px;">if </span><span
+                            style="color: gray;">(</span><span>x <span style="color: green;">
+                                < </span>18
+                            </span><span style="color: gray;">)</span><br>
+                            <span style="color: gray; margin-left: 20px;">{</span><br>
+                            <span style="margin-left: 20px;">Console <span style="color: gray;">.WriteLine(</span><span>
+                                    <span style="color: green;">"Good day."</span><span
+                                        style="color: gray;">);</span></span></span><br>
+                            <span style="color: gray; margin-left: 20px;">}</span><br>
+                        </span></span>
+                        <span style="color: blue; margin-left: 20px;">else</span><br>
+                        <span style="color: gray; margin-left: 20px;">{</span><br>
+                        <span style="margin-left: 20px;">Console <span style="color: gray;">.WriteLine(</span><span>
+                                <span style="color: green;">"Good evening."</span><span
+                                    style="color: gray;">);</span></span></span><br>
+                        <span style="color: gray; margin-left: 20px;">}</span><br>
+                        <span style="margin-left: 20px; color: gray;">// Outputs "Good evening."</span><br>
+                        <br><br>
+                    </div><br><br>
+                    <h5>Example explained</h5>
+                    <span>In the example above, time (20) is greater than 18, so the condition is <span
+                            style="color: gray;">False</span>. Because of
+                        this, we move on to the <span style="color: gray;">else</span> condition and print to the screen
+                        "Good evening". If the time was
+                        less than 18, the program would print "Good day".</span><br><br>
+                    <h4>The else if Statement</h4>
+                    <span>Use the <span style="color: gray;">else if</span> statement to specify a new condition if the
+                        first condition is <span style="color: gray;">False</span>.</span><br><br>
+                    <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                        <h2 style="margin: 20px;">Syntax</h2>
+                        <span style="color: blue; margin-left: 20px;">if </span><span
+                            style="color: gray;">(</span><span>condition1</span><span style="color: gray;">)</span><br>
+                        <span style="color: gray; margin-left: 20px;">{</span><br>
+                        <span style="color: gray; margin-left: 20px;">// block of code to be executed if the condition1
+                            is True</span><br>
+                        <span style="color: gray; margin-left: 20px;">}</span><br>
+                        <span style="color: blue;margin-left: 20px;">else if (</span><span>condition2</span><span
+                            style="color: gray;">)</span><br>
+                        <span style="color: gray; margin-left: 20px;">{</span><br>
+                        <span style="color: gray; margin-left: 20px;">// block of code to be executed if the condition1
+                            is false and condition2 is True</span><br>
+                        <span style="color: gray; margin-left: 20px;">}</span><br>
+                        <span style="color: blue;margin-left: 20px;">else</span><br>
+                        <span style="color: gray; margin-left: 20px;">{</span><br>
+                        <span style="color: gray; margin-left: 20px;">// block of code to be executed if the condition1
+                            is false and condition2 is False</span><br>
+                        <span style="color: gray; margin-left: 20px;">}</span><br>
+                        <br><br>
+                    </div><br><br>
+                    <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                        <h2 style="margin: 20px;">Example</h2>
+                        <span style="color: blue; margin-left: 20px;">int</span><span> time</span><span
+                            style="color: gray;">=</span><span>22</span><span style="color: gray;">;</span><br>
+                        <span style="color: blue; margin-left: 20px;">if </span><span
+                            style="color: gray;">(</span><span>time <span style="color: green;">
+                                < </span>10
+                            </span><span style="color: gray;">)</span><br>
+                            <span style="color: gray; margin-left: 20px;">{</span><br>
+                            <span style="color: blue; margin-left: 20px;">else if </span><span
+                                style="color: gray;">(</span><span>x <span style="color: green;">
+                                    < </span>20
+                                </span><span style="color: gray;">)</span><br>
+                                <span style="color: gray; margin-left: 20px;">{</span><br>
+                                <span style="margin-left: 20px;">Console <span
+                                        style="color: gray;">.WriteLine(</span><span>
+                                        <span style="color: green;">"Good day."</span><span
+                                            style="color: gray;">);</span></span></span><br>
+                                <span style="color: gray; margin-left: 20px;">}</span><br>
+                            </span></span>
+                        <span style="color: blue; margin-left: 20px;">else</span><br>
+                        <span style="color: gray; margin-left: 20px;">{</span><br>
+                        <span style="margin-left: 20px;">Console <span style="color: gray;">.WriteLine(</span><span>
+                                <span style="color: green;">"Good evening."</span><span
+                                    style="color: gray;">);</span></span></span><br>
+                        <span style="color: gray; margin-left: 20px;">}</span><br>
+                        <span style="margin-left: 20px; color: gray;">// Outputs "Good evening."</span><br>
+                        <br><br>
+                    </div><br><br>
+                    <h5>Example explained</h5>
+                    <span>In the example above, time (22) is greater than 10, so the <b>first condition</b> is
+                        <span style="color: gray;">False</span>. The
+                        next condition, in the <span style="color: gray;">else if</span> statement, is also <span
+                            style="color: gray;">False</span>,
+                        so we move on to the else condition
+                        since <b>condition1</b> and <b>condition2</b> is both <span style="color: gray;">False</span> -
+                        and print to the screen "Good
+                        evening".</span><br><br>
+                    <span>However, if the time was 14, our program would print "Good day."</span><br><br>
+    </div>
+    </div>
+
+
+    <div class="example" id="switch">
+        <center>
+            <h1>C# Switch</h1>
+        </center>
+        <h4>C# Switch Statements</h4>
+        <span>Use the <span style="color: gray ;">switch</span> statement to select one of many code blocks to be
+            executed.</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Syntax</h2>
+            <span style="color: blue; margin-left: 20px;">switch </span><span
+                style="color: gray;">(</span><span>expression</span><span style="color: gray;">)</span><br>
+            <span style="color: gray;margin-left: 20px;">{</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;case</span> <span>x</span><span
+                style="color: gray;">:</span><br>
+            <span style="color: gray; margin-left: 20px;">&emsp;&emsp;// code block</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break;</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;case</span> <span>y</span><span
+                style="color: gray;">:</span><br>
+            <span style="color: gray; margin-left: 20px;">&emsp;&emsp;// code block</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break;</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;default:</span><br>
+            <span style="color: gray; margin-left: 20px;">&emsp;&emsp;// code block</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break</span><span
+                style="color: gray;">:</span><br>
+            <span style="color: gray;margin-left: 20px;">}</span><br>
+            <br><br>
+        </div><br><br>
+        <span>This is how it works:</span><br><br>
+        <span>• The <span style="color: gray;">switch</span> expression is evaluated once</span><br>
+        <span>• The value of the expression is compared with the values of each <span
+                style="color: gray;">case</span></span><br>
+        <span>• If there is a match, the associated block of code is executed</span><br>
+        <span>• The <span style="color: gray;">break</span> and <span style="color: gray;">default</span> keywords will
+            be described later in this chapter</span><br><br>
+        <span>The example below uses the weekday number to calculate the weekday name:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: blue; margin-left: 20px;">int</span> <span>day = 4</span><span
+                style="color: gray;">;</span><br>
+            <span style="color: blue; margin-left: 20px;">switch </span><span
+                style="color: gray;">(</span><span>day</span><span style="color: gray;">)</span><br>
+            <span style="color: gray;margin-left: 20px;">{</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;case</span> <span>1</span><span
+                style="color: gray;">:</span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;Console <span style="color: gray;">.WriteLine(</span><span>
+                    <span style="color: green;">"Monday"</span><span style="color: gray;">);</span></span></span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break;</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;case</span> <span>2</span><span
+                style="color: gray;">:</span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;Console <span style="color: gray;">.WriteLine(</span><span>
+                    <span style="color: green;">"Tuesday"</span><span style="color: gray;">);</span></span></span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break;</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;case</span> <span>3</span><span
+                style="color: gray;">:</span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;Console <span style="color: gray;">.WriteLine(</span><span>
+                    <span style="color: green;">"Wednesday"</span><span style="color: gray;">);</span></span></span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break;</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;case</span> <span>4</span><span
+                style="color: gray;">:</span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;Console <span style="color: gray;">.WriteLine(</span><span>
+                    <span style="color: green;">"Thursday"</span><span style="color: gray;">);</span></span></span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break;</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;case</span> <span>5</span><span
+                style="color: gray;">:</span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;Console <span style="color: gray;">.WriteLine(</span><span>
+                    <span style="color: green;">"Friday"</span><span style="color: gray;">);</span></span></span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break;</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;case</span> <span>6</span><span
+                style="color: gray;">:</span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;Console <span style="color: gray;">.WriteLine(</span><span>
+                    <span style="color: green;">"Saturday"</span><span style="color: gray;">);</span></span></span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break;</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;case</span> <span>7</span><span
+                style="color: gray;">:</span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;Console <span style="color: gray;">.WriteLine(</span><span>
+                    <span style="color: green;">"Sunday"</span><span style="color: gray;">);</span></span></span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break;</span><br>
+            <span style="color: gray;margin-left: 20px;">}</span><br>
+            <span style="color: gray;margin-left: 20px;">// Outputs "Thursday" (day 4)</span><br>
+            <br><br>
+        </div><br><br>
+        <h4>The break Keyword</h4>
+        <span>When C# reaches a <span style="color: gray;">break</span> keyword, it breaks out of the switch
+            block.</span><br><br>
+        <span>This will stop the execution of more code and case testing inside the block.</span><br><br>
+        <span>When a match is found, and the job is done, it's time for a break. There is no need for more
+            testing.</span><br><br>
+        <div style="width: 100%; background: #ffffcc; padding: 10px;">
+            <span>A break can save a lot of execution time because it "ignores" the execution of all the rest of the
+                code in the switch block.</span>
+        </div><br><br>
+        <h4>The default Keyword</h4>
+        <span>The <span style="color: gray;">default</span> keyword is optional and specifies some code to run if there
+            is no case match:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: blue; margin-left: 20px;">int</span> <span>day = 4</span><span
+                style="color: gray;">;</span><br>
+            <span style="color: blue; margin-left: 20px;">switch </span><span
+                style="color: gray;">(</span><span>day</span><span style="color: gray;">)</span><br>
+            <span style="color: gray;margin-left: 20px;">{</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;case</span> <span>6</span><span
+                style="color: gray;">:</span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;Console <span style="color: gray;">.WriteLine(</span><span>
+                    <span style="color: green;">"Today is Saturday."</span><span
+                        style="color: gray;">);</span></span></span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break;</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;case</span> <span>7</span><span
+                style="color: gray;">:</span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;Console <span style="color: gray;">.WriteLine(</span><span>
+                    <span style="color: green;">"Today is Sunday."</span><span
+                        style="color: gray;">);</span></span></span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break;</span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;default:</span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;Console <span style="color: gray;">.WriteLine(</span><span>
+                    <span style="color: green;">"Looking forward to the Weekend."</span><span
+                        style="color: gray;">);</span></span></span><br>
+            <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break</span><span
+                style="color: gray;">:</span><br>
+            <span style="color: gray;margin-left: 20px;">}</span><br>
+            <span style="color: gray;margin-left: 20px;">// Outputs "Looking forward to the Weekend."</span><br>
+            <br><br>
+        </div><br><br>
+    </div>
+
+    <video width="900" height="auto" controls class="vid1">
+        <source src="./resources pics/while loop.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="example" id="while">
+        <center>
+            <h1>C# While Loop</h1>
+        </center>
+        <h4>Loops</h4>
+        <span>Loops can execute a block of code as long as a specified condition is reached.</span><br><br>
+        <span>Loops are handy because they save time, reduce errors, and they make code more readable.</span><br>
+        <h4>C# While Loop</h4>
+        <span>The <span style="color: gray;">while</span> loop loops through a block of code as long as a specified
+            condition is <span style="color: gray;">True</span>:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Syntax</h2>
+            <span style="color: blue; margin-left: 20px;">while</span>
+            <span style="color: gray;">(</span><span>condition</span><span style="color: gray;">)</span><br>
+            <span style="color: gray; margin-left: 20px;">{</span><br>
+            <span style="color: gray; margin-left: 20px;">&emsp;// code block to be executed</span><br>
+            <span style="color: gray; margin-left: 20px;">}</span><br><br><br>
+        </div><br><br>
+        <span>In the example below, the code in the loop will run, over and over again, as long as a variable (i) is
+            less than 5:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: blue; margin-left: 20px;">int</span> <span>i = 0</span><span
+                style="color: gray;">;</span><br>
+            <span style="color: blue; margin-left: 20px;">while</span>
+            <span style="color: gray;">(</span><span>i</span><span style="color: green;">
+                < </span><span>5</span><span style="color: gray;">)</span><br>
+                    <span style="color: gray; margin-left: 20px;">{</span><br>
+                    <span style="margin-left: 20px;">&emsp;&emsp;Console <span
+                            style="color: gray;">.WriteLine(</span><span>i</span><span
+                            style="color: gray;">);</span></span><br>
+                    <span style="margin-left: 20px;">&emsp;&emsp;i</span><span style="color: green;">++</span><span
+                        style="color: gray;">;</span>
+            </span><br>
+            <span style="color: gray; margin-left: 20px;">}</span><br><br><br>
+        </div><br><br>
+        <div style="width: 100%; background: #ffffcc; padding: 10px;">
+            <span><b>Note:</b> Do not forget to increase the variable used in the condition, otherwise the loop will
+                never end!</span>
+        </div><br><br>
+        <h4>The Do/While Loop</h4>
+        <span>The <span style="color: gray;">do/while</span> loop is a variant of the <span
+                style="color: gray;">while</span> loop. This loop will execute the code block once, before
+            checking if the condition is true, then it will repeat the loop as long as the condition is
+            true.</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Syntax</h2>
+            <span style="color: blue; margin-left: 20px;">do</span><br>
+            <span style="color: gray; margin-left: 20px;">{</span><br>
+            <span style="color: gray; margin-left: 20px;">&emsp;// code block to be executed</span><br>
+            <span style="color: gray; margin-left: 20px;">}</span><br>
+            <span style="color: blue; margin-left: 20px;">while</span>
+            <span style="color: gray;">(</span><span>condition</span><span style="color: gray;">);</span><br><br><br>
+        </div><br><br>
+        <span>The example below uses a <span style="color: gray;">do/while</span> loop. The loop will always be executed
+            at least once, even if the
+            condition is false, because the code block is executed before the condition is tested:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: blue; margin-left: 20px;">int</span> <span>i = 0</span><span
+                style="color: gray;">;</span><br>
+            <span style="color: blue; margin-left: 20px;">do</span><br>
+            <span style="color: gray; margin-left: 20px;">{</span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;Console <span
+                    style="color: gray;">.WriteLine(</span><span>i</span><span style="color: gray;">);</span></span><br>
+            <span style="margin-left: 20px;">&emsp;&emsp;i</span><span style="color: green;">++</span><br>
+            <span style="color: gray; margin-left: 20px;">}</span><br>
+            <span style="color: blue; margin-left: 20px;">while</span>
+            <span style="color: gray;">(</span><span>i</span><span style="color: green;">
+                < </span><span>5</span><span style="color: gray;">)</span><span style="color: gray;">;</span>
+            </span><br><br><br>
+        </div><br><br>
+        <div style="width: 100%; background: #ffffcc; padding: 10px;">
+            <span>Do not forget to increase the variable used in the condition, otherwise the loop will never
+                end!</span>
+        </div><br><br>
+    </div>
+
+    <video width="900" height="auto" controls class="vid1">
+        <source src="./resources pics/for loop.mp4" type="video/mp4">
+    </video>
+    <div class="example" id="for">
+        <center>
+            <h1>C# For Loop</h1>
+        </center>
+        <h4>C# For Loop</h4>
+        <span>When you know exactly how many times you want to loop through a block of code, use the <span
+                style="color: gray;">for</span> loop instead of
+            a <span style="color: gray;">while</span> loop:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Syntax</h2>
+            <span style="color: blue; margin-left: 20px;">for</span><span
+                style="color: gray;">(</span><span>statement1</span><span style="color: gray;">;</span><span>
+                statement2</span><span style="color: gray;">;</span><span> statement3</span><span
+                style="color: gray;">;</span><span style="color: gray;">)</span><br>
+            <span style="color: gray; margin-left: 20px;">{</span><br>
+            <span style="color: gray; margin-left: 20px;">&emsp;// code block to be executed</span><br>
+            <span style="color: gray; margin-left: 20px;">}</span><br>
+            <br><br>
+        </div><br><br>
+        <span><b>Statement 1</b> is executed (one time) before the execution of the code block.</span><br><br>
+        <span><b>Statement 2</b> defines the condition for executing the code block.</span><br><br>
+        <span><b>Statement 3</b> is executed (every time) after the code block has been executed.</span><br><br>
+        <span>The example below will print the numbers 0 to 4:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: blue; margin-left: 20px;">for</span> <span style="color:gray;">(</span><span
+                style="color: blue;">int</span> <span>i <span style="color: green;">=</span> 0</span><span
+                style="color: gray;">;</span> <span>i <span style="color: green;">
+                    < </span> 5
+                </span><span style="color: gray;">;</span><span> i</span><span style="color: green;">++</span><span
+                    style="color:gray;">)</span><br>
+                <span style="color:gray; margin-left: 20px;">{</span><br>
+                <span style="margin-left: 20px;">&emsp;Console</span><span
+                    style="color: gray;">.WriteLine(</span><span>i</span><span style="color: gray;">);</span><br>
+                <span style="color:gray; margin-left: 20px;">}</span><br>
+                <br><br>
+        </div><br><br>
+        <h5>Example explained</h5>
+        <span>Statement 1 sets a variable before the loop starts (<span style="color: gray;">int i =
+                0</span>).</span><br><br>
+        <span>Statement 2 defines the condition for the loop to run (<span style="color: gray;">i</span> must be less
+            than <span style="color: gray;">5</span>). If the condition is <span style="color: gray;">true</span>,
+            the loop will start over again, if it is <span style="color: gray;">false</span>, the loop will
+            end.</span><br><br>
+        <span>Statement 3 increases a value (<span style="color: gray;">i++</span>) each time the code block in the loop
+            has been executed.</span><br><br>
+        <h4>Another Example</h4>
+        <span>This example will only print even values between 0 and 10:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: blue; margin-left: 20px;">for</span> <span style="color:gray;">(</span><span
+                style="color: blue;">int</span> <span>i <span style="color: green;">=</span> 0</span><span
+                style="color: gray;">;</span> <span>i <span style="color: green;">
+                    <= </span> <span>10</span>
+                </span><span style="color: gray;">;</span><span> i</span><span style="color: green;"> = </span><span>i
+                    <span style="color: green;">+</span><span>2</span></span><span style="color:gray;">)</span><br>
+                <span style="color:gray; margin-left: 20px;">{</span><br>
+                <span style="margin-left: 20px;">&emsp;Console</span><span
+                    style="color: gray;">.WriteLine(</span><span>i</span><span style="color: gray;">);</span><br>
+                <span style="color:gray; margin-left: 20px;">}</span><br>
+                <br><br>
+        </div><br><br>
+        <h4>Nested Loops</h4>
+        <span>It is also possible to place a loop inside another loop. This is called a <b>nested
+                loop</b>.</span><br><br>
+        <span>The "inner loop" will be executed one time for each iteration of the "outer loop":</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: gray; margin-left: 20px;">// Outer loop</span><br>
+            <span style="color: blue; margin-left: 20px;">for</span> <span style="color:gray;">(</span><span
+                style="color: blue;">int</span> <span>i <span style="color: green;">=</span> 1</span><span
+                style="color: gray;">;</span> <span>i <span style="color: green;">
+                    <= </span> <span>2</span>
+                </span><span style="color: gray;">;</span><span> i</span><span style="color: green;"> = </span>
+                <span style="color: green;">++</span><span>i</span><span style="color:gray;">)</span><br>
+                <span style="color:gray; margin-left: 20px;">{</span><br>
+                <span style="margin-left: 20px;">&emsp;Console</span><span style="color: gray;">.WriteLine(</span><span
+                    style="color: green;">"Outer" + </span><span>i</span><span style="color: gray;">); // Executes 2
+                    times</span><br><br>
+                <span style="color: gray; margin-left: 20px;">&emsp;// Inner loop</span><br>
+                <span style="color: blue; margin-left: 20px;">&emsp;for</span> <span style="color:gray;">(</span><span
+                    style="color: blue;">int</span> <span>j <span style="color: green;">=</span> 1</span><span
+                    style="color: gray;">;</span> <span>i <span style="color: green;">
+                        <= </span> <span>3</span>
+                    </span><span style="color: gray;">;</span><span> i</span><span style="color: green;"> =
+                    </span><span>j</span><span style="color: green;">++</span><span style="color:gray;">)</span><br>
+                    <span style="color:gray; margin-left: 20px;">&emsp;{</span><br>
+                    <span style="margin-left: 20px;">&emsp;&emsp;Console</span><span
+                        style="color: gray;">.WriteLine(</span><span style="color: green;">"Inner" +
+                    </span><span>j</span><span style="color: gray;">); // Executes 6 times (2 * 3)</span><br>
+                    <span style="color:gray; margin-left: 20px;">&emsp;}</span><br>
+                    <span style="color:gray; margin-left: 20px;">}</span><br>
+                    <br><br>
+        </div><br><br>
+    </div>
+
+    <video width="900" height="auto" controls class="vid1">
+        <source src="./resources pics/breakcontinue.mp4" type="video/mp4">
+    </video>
+    <div class="example" id="break-and-continue">
+        <center>
+            <h1>C# Break and Continue</h1>
+        </center>
+        <h4>C# Break</h4>
+        <span>You have already seen the <span style="color: gray;">break</span> statement used in an earlier chapter of
+            this tutorial. It was used to
+            "jump out" of a <span style="color: gray;">switch</span> statement.</span><br><br>
+        <span>The <span style="color: gray;">break</span> statement can also be used to jump out of a
+            <b>loop</b>.</span><br><br>
+        <span>This example jumps out of the loop when <span style="color: gray;">i</span> is equal to <span
+                style="color: gray;">4</span>:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: blue; margin-left: 20px;">for</span> <span style="color:gray;">(</span><span
+                style="color: blue;">int</span> <span>i <span style="color: green;">=</span> 0</span><span
+                style="color: gray;">;</span> <span>i <span style="color: green;">
+                    < </span> <span>10</span>
+                </span><span style="color: gray;">;</span><span> i</span><span style="color: green;">++ </span>
+                <span style="color:gray;">)</span><br>
+                <span style="color:gray; margin-left: 20px;">{</span><br>
+                <span style="color: blue; margin-left: 20px;">&emsp;if</span><span style="color: gray;">
+                    (</span><span>i</span><span style="color: green;">==</span><span>4</span><span
+                    style="color: gray;">)</span><br>
+                <span style="color:gray; margin-left: 20px;">&emsp;{</span><br>
+                <span style="color:blue; margin-left: 20px;">&emsp;&emsp;break</span><span
+                    style="color: gray;">;</span><br>
+                <span style="color:gray; margin-left: 20px;">&emsp;}</span><br>
+                <span style="margin-left: 20px;">&emsp;Console</span><span
+                    style="color: gray;">.WriteLine(</span><span>i</span><span style="color: gray;">);</span><br>
+                <span style="color:gray; margin-left: 20px;">}</span><br>
+                <br><br>
+        </div><br><br>
+        <h4>C# Continue</h4>
+        <span>The <span style="color: gray;">continue</span> statement breaks one iteration (in the loop), if a
+            specified condition occurs, and continues
+            with the next iteration in the loop.</span><br><br>
+        <span>This example skips the value of <span style="color: gray;">4</span>:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: blue; margin-left: 20px;">for</span> <span style="color:gray;">(</span><span
+                style="color: blue;">int</span> <span>i <span style="color: green;">=</span> 0</span><span
+                style="color: gray;">;</span> <span>i <span style="color: green;">
+                    < </span> <span>10</span>
+                </span><span style="color: gray;">;</span><span> i</span><span style="color: green;">++ </span>
+                <span style="color:gray;">)</span><br>
+                <span style="color:gray; margin-left: 20px;">{</span><br>
+                <span style="color: blue; margin-left: 20px;">&emsp;if</span><span style="color: gray;">
+                    (</span><span>i</span><span style="color: green;">==</span><span>4</span><span
+                    style="color: gray;">)</span><br>
+                <span style="color:gray; margin-left: 20px;">&emsp;{</span><br>
+                <span style="color:blue; margin-left: 20px;">&emsp;&emsp;continue</span><span
+                    style="color: gray;">;</span><br>
+                <span style="color:gray; margin-left: 20px;">&emsp;}</span><br>
+                <span style="margin-left: 20px;">&emsp;Console</span><span
+                    style="color: gray;">.WriteLine(</span><span>i</span><span style="color: gray;">);</span><br>
+                <span style="color:gray; margin-left: 20px;">}</span><br>
+                <br><br>
+        </div><br><br>
+        <h4>Break and Continue in While Loop</h4>
+        <span>You can also use <span style="color: gray;">break</span> and <span style="color: gray;">continue</span> in
+            while loops:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Break Example</h2>
+            <span style="margin-left: 20px; color: blue;">int</span><span> i = 0</span><span
+                style="color: gray;">;</span><br>
+            <span style="margin-left: 20px; color: blue;">while</span><span style="color: gray;">
+                (</span><span>i</span><span style="color: green;">
+                < </span><span>10</span><span style="color: gray;">)</span><br>
+                    <span style="color: gray; margin-left: 20px;">{</span><br>
+                    <span style="margin-left: 20px;">&emsp;Console</span><span
+                        style="color: gray;">.WriteLine(</span><span>i</span><span style="color: gray;">);</span><br>
+                    <span style="margin-left: 20px;">&emsp;i</span><span style="color: green;">++</span><span
+                        style="color: gray;">;</span><br>
+                    <span style="color: blue; margin-left: 20px;">&emsp;if </span><span
+                        style="color: gray;">(</span><span>i</span><span
+                        style="color: green;">==</span><span>4</span><span style="color: gray;">)</span><br>
+                    <span style="color: gray;margin-left: 20px;">&emsp;{</span><br>
+                    <span style="color: blue; margin-left: 20px;">&emsp;&emsp;break</span><span
+                        style="color: gray;">;</span><br>
+                    <span style="color: gray;margin-left: 20px;">&emsp;}</span><br>
+                    <span style="color: gray;margin-left: 20px;">}</span><br>
+                    <br><br>
+        </div><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Break Example</h2>
+            <span style="margin-left: 20px; color: blue;">int</span><span> i = 0</span><span
+                style="color: gray;">;</span><br>
+            <span style="margin-left: 20px; color: blue;">while</span><span style="color: gray;">
+                (</span><span>i</span><span style="color: green;">
+                < </span><span>10</span><span style="color: gray;">)</span><br>
+                    <span style="color: gray; margin-left: 20px;">{</span><br>
+                    <span style="color: blue; margin-left: 20px;">&emsp;if </span><span
+                        style="color: gray;">(</span><span>i</span><span
+                        style="color: green;">==</span><span>4</span><span style="color: gray;">)</span><br>
+                    <span style="color: gray;margin-left: 20px;">&emsp;{</span><br>
+                    <span style="margin-left: 20px;">&emsp;&emsp;i</span><span style="color: green;">++</span><span
+                        style="color: gray;">;</span><br>
+                    <span style="color: blue; margin-left: 20px;">&emsp;&emsp;continue</span><span
+                        style="color: gray;">;</span><br>
+                    <span style="color: gray;margin-left: 20px;">&emsp;}</span><br>
+                    <span style="margin-left: 20px;">&emsp;Console</span><span
+                        style="color: gray;">.WriteLine(</span><span>i</span><span style="color: gray;">);</span><br>
+                    <span style="margin-left: 20px;">&emsp;i</span><span style="color: green;">++</span><span
+                        style="color: gray;">;</span><br>
+                    <span style="color: gray;margin-left: 20px;">}</span><br>
+                    <br><br>
+        </div><br><br>
+    </div>
+
+    <video width="900" height="auto" controls class="vid1">
+        <source src="./resources pics/array.mp4" type="video/mp4">
+    </video>
+    <div class="example" id="array">
+        <center>
+            <h1>C# Arrays</h1>
+        </center>
+        <h4>Create an Array</h4>
+        <span>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for
+            each value.</span><br><br>
+        <span>To declare an array, define the variable type with <b>square brackets</b>:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <span style="color: blue; margin-left: 20px;">string</span><span style="color: gray;">[]</span><span>
+                cars</span><span style="color: gray;">;</span>
+            <br><br>
+        </div><br><br>
+        <span>We have now declared a variable that holds an array of strings.</span><br><br>
+        <span>To insert values to it, we can use an array literal - place the values in a comma-separated list, inside
+            curly braces:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <span style="color: blue; margin-left: 20px;">string</span><span style="color: gray;">[]</span><span>
+                cars</span><span style="color: green;">=</span><span style="color: gray;">{</span><span
+                style="color: green;">"Volvo"</span><span style="color: gray;">,</span><span
+                style="color: green;">"BMW"</span><span style="color: gray;">,</span><span
+                style="color: green;">"Ford"</span><span style="color: gray;">,</span><span
+                style="color: green;">"Mazda"</span><span style="color: gray;">};</span>
+            <br><br>
+        </div><br><br>
+        <span>To create an array of integers, you could write:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <span style="color: blue; margin-left: 20px;">int</span><span style="color: gray;">[]</span><span>
+                myNum</span><span style="color: green;">=</span><span style="color: gray;">{</span><span>10</span><span
+                style="color: gray;">, </span><span>20</span><span style="color: gray;">, </span><span>30</span><span
+                style="color: gray;">, </span><span>40</span><span style="color: gray;">};</span>
+            <br><br>
+        </div><br><br>
+        <h4>Access the Elements of an Array</h4>
+        <span>You access an array element by referring to the index number.</span><br><br>
+        <span>This statement accesses the value of the first element in <b>cars</b>:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: blue; margin-left: 20px;">string</span><span style="color: gray;">[]</span><span>
+                cars</span><span style="color: green;">=</span><span style="color: gray;">{</span><span
+                style="color: green;">"Volvo"</span><span style="color: gray;">,</span><span
+                style="color: green;">"BMW"</span><span style="color: gray;">,</span><span
+                style="color: green;">"Ford"</span><span style="color: gray;">,</span><span
+                style="color: green;">"Mazda"</span><span style="color: gray;">};</span><br>
+            <span style="margin-left: 20px;">Console</span><span
+                style="color: gray;">.WriteLine(</span><span>cars</span><span
+                style="color: gray;">[</span><span>0</span><span style="color: gray;">]);</span><br>
+            <span style="color: gray; margin-left: 20px;">// Outputs Volvo</span><br>
+            <br><br>
+        </div><br><br>
+        <div style="width: 100%; background: #ffffcc; padding: 10px;">
+            <span><b>Note:</b> Array indexes start with 0: [0] is the first element. [1] is the second element,
+                etc.</span>
+        </div><br><br>
+        <h4>Change an Array Element</h4>
+        <span>To change the value of a specific element, refer to the index number:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <span style="margin-left: 20px;">cars</span><span style="color: gray;">[</span><span>0</span><span
+                style="color: gray;">]</span><span>=</span><span style="color: green;">"Opel"</span><span
+                style="color: gray;">;</span>
+            <br><br>
+        </div><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: blue; margin-left: 20px;">string</span><span style="color: gray;">[]</span><span>
+                cars</span><span style="color: green;">=</span><span style="color: gray;">{</span><span
+                style="color: green;">"Volvo"</span><span style="color: gray;">,</span><span
+                style="color: green;">"BMW"</span><span style="color: gray;">,</span><span
+                style="color: green;">"Ford"</span><span style="color: gray;">,</span><span
+                style="color: green;">"Mazda"</span><span style="color: gray;">};</span><br>
+            <span style="margin-left: 20px;">cars</span><span style="color: gray;">[</span><span>0</span><span
+                style="color: gray;">]</span><span>=</span><span style="color: green;">"Opel"</span><span
+                style="color: gray;">;</span><br>
+            <span style="margin-left: 20px;">Console</span><span
+                style="color: gray;">.WriteLine(</span><span>cars</span><span
+                style="color: gray;">[</span><span>0</span><span style="color: gray;">]);</span><br>
+            <span style="color: gray; margin-left: 20px;">// Now outputs Opel instead of Volvo</span><br>
+            <br><br>
+        </div><br><br>
+        <h4>Array Length</h4>
+        <span>To find out how many elements an array has, use the <span style="color: gray;">Length</span>
+            property:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="color: blue; margin-left: 20px;">string</span><span style="color: gray;">[]</span><span>
+                cars</span><span style="color: green;">=</span><span style="color: gray;">{</span><span
+                style="color: green;">"Volvo"</span><span style="color: gray;">,</span><span
+                style="color: green;">"BMW"</span><span style="color: gray;">,</span><span
+                style="color: green;">"Ford"</span><span style="color: gray;">,</span><span
+                style="color: green;">"Mazda"</span><span style="color: gray;">};</span><br>
+            <span style="margin-left: 20px;">Console</span><span
+                style="color: gray;">.WriteLine(</span><span>cars</span><span
+                style="color: gray;">.</span><span>Length</span><span style="color: gray;">);</span><br>
+            <span style="margin-left: 20px; color: gray;">// Outputs 4</span>
+            <br><br>
+        </div><br><br>
+        <h4>Other Ways to Create an Array</h4>
+        <span>If you are familiar with C#, you might have seen arrays created with the <span
+                style="color: gray;">new</span> keyword, and perhaps you have
+            seen arrays with a specified size as well. In C#, there are different ways to create an
+            array:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <span style="margin-left: 20px; color: gray;">// Create an array of four elements, and add values
+                later</span><br>
+            <span style="margin-left: 20px; color: blue;">string</span><span style="color: gray;">[]</span>
+            <span>cars</span> <span style="color: green;">=</span><span style="color: blue;">new
+                string</span> <span style="color: gray;">[</span><span>4</span><span
+                style="color: gray;">];</span><br><br>
+            <span style="margin-left: 20px; color: gray;">// Create an array of four elements and add values right away
+            </span><br>
+            <span style="margin-left: 20px; color: blue;">string</span><span style="color: gray;">[]</span>
+            <span>cars</span> <span style="color: green;">=</span> <span style="color: blue;">new
+                string</span><span style="color: gray;">[</span><span>4</span><span style="color: gray;">]</span><span
+                style="color: gray;">{</span>
+            <span style="color: green;">"Volvo"</span><span style="color: gray;">,</span>
+            <span style="color: green;">"BMW"</span><span style="color: gray;">,</span>
+            <span style="color: green;">"Ford"</span><span style="color: gray;">,</span>
+            <span style="color: green;">"Mazda"</span><span style="color: gray;">,</span>
+            <span style="color: gray;">};</span><br><br>
+            <span style="margin-left: 20px; color: gray;">// Create an array of four elements without specifying the
+                size </span><br>
+            <span style="margin-left: 20px; color: blue;">string</span><span style="color: gray;">[]</span>
+            <span>cars</span> <span style="color: green;">=</span> <span style="color: blue;">new
+                string</span><span style="color: gray;">[]</span> <span style="color: gray;">{</span>
+            <span style="color: green;">"Volvo"</span><span style="color: gray;">,</span>
+            <span style="color: green;">"BMW"</span><span style="color: gray;">,</span>
+            <span style="color: green;">"Ford"</span><span style="color: gray;">,</span>
+            <span style="color: green;">"Mazda"</span><span style="color: gray;">,</span>
+            <span style="color: gray;">};</span><br><br>
+            <span style="margin-left: 20px; color: gray;">// Create an array of four elements, omitting the new keyword,
+                and without
+                specifying the
+                size</span><br>
+            <span style="margin-left: 20px; color: blue;">string</span><span style="color: gray;">[]</span>
+            <span>cars</span> <span style="color: green;">=</span> <span style="color: gray;">{</span>
+            <span style="color: green;">"Volvo"</span><span style="color: gray;">,</span>
+            <span style="color: green;">"BMW"</span><span style="color: gray;">,</span>
+            <span style="color: green;">"Ford"</span><span style="color: gray;">,</span>
+            <span style="color: green;">"Mazda"</span><span style="color: gray;">,</span>
+            <span style="color: gray;">};</span><br><br>
+        </div><br><br>
+        <span>It is up to you which option you choose. In our tutorial, we will often use the last option, as it is
+            faster and easier to read.</span><br><br>
+        <span>However, you should note that if you declare an array and initialize it later, you have to use the <span
+                style="color: gray;">new</span>
+            keyword:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <span style="margin-left: 20px; color: gray;">// Declare an array</span><br>
+            <span style="margin-left: 20px; color: blue;">string</span><span style="color: gray;">[]</span><span>
+                cars</span><span style="color: gray;">;</span><br><br>
+            <span style="margin-left: 20px; color: gray;">// Add values, using new</span><br>
+            <span style="margin-left: 20px;">cars</span><span style="color: green;">=</span><span style="color: blue;"
+                new string></span><span style="color: gray;">new string[] {</span><span
+                style="color: green;">"Volvo"</span><span style="color: gray;">,</span><span
+                style="color: green;">"BMW"</span><span style="color: gray;">,</span><span
+                style="color: green;">"Ford"</span><span style="color: gray;">};</span><br><br>
+            <span style="margin-left: 20px; color: gray;">// Add values without using new (this will cause an
+                error)</span><br>
+            <span style="margin-left: 20px;">cars</span><span style="color: green;">=</span><span
+                style="color: gray;">{</span><span style="color: green;">"Volvo"</span><span
+                style="color: gray;">,</span><span style="color: green;">"BMW"</span><span
+                style="color: gray;">,</span><span style="color: green;">"Ford"</span><span
+                style="color: gray;">};</span><br><br>
+        </div><br><br>
+        <h1>C# Loop Through Arrays</h1>
+        <h4>Loop Through an Array</h4>
+        <span>You can loop through the array elements with the <span style="color: gray;">for</span> loop, and use the
+            <span style="color: gray;">Length</span> property to specify how many
+            times the loop should run.</span><br><br>
+        <span>The following example outputs all elements in the <b>cars</b> array:</span><br><br>
+        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+            <h2 style="margin: 20px;">Example</h2>
+            <span style="margin-left: 20px; color: blue;">string</span><span style="color: gray;">[]</span>
+            <span>cars =</span><span style="color: gray;">{</span><span style="color: green;">"Volvo"</span><span
+                style="color: gray;">,</span><span style="color: green;">"Volvo"</span><span
+                style="color: gray;">,</span> <span style="color: green;">"BMW"</span><span
+                style="color: gray;">,</span> <span style="color: green;">"Ford"</span><span
+                style="color: gray;">}</span><br>
+            <span style="margin-left: 20px; color: blue;">for</span> <span style="color: gray;">(</span><span>i =
+                0</span><span style="color: gray;">;</span> i <span style="color: green;">
+                < </span> cars.Length<span style="color: gray;">;</span> i<span style="color: green;">++</span><span
+                        style="color: gray;">)</span>
+            </span><br>
+            <span style="margin-left: 20px; color: gray;">{</span><br>
+            <span style="margin-left: 20px;">&emsp;Console</span><span style="color: gray;">.WriteLine(</span>cars<span
+                style="color: gray;">[</span>i<span style="color: gray;">]);</span><br>
+            <span style="margin-left: 20px; color: gray;">}</span><br><br><br>
+        </div><br><br>
+    </div>
+
+    <div class="example">
+        <h4>Test Yourself With Quizzes</h4>
+        <h5>Click Button to take quiz</h5><br>
+        <a href="quizzes2.html"><button class="btn1">Get Started</button><br>
+    </div>
+    <br>
+    </div>
+    </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+    padding: 10px;
+}
+.form{
+    width: 600px;
+    padding: 6px;
+    background-color: WHITE;
+    border-radius: 12px;
+    box-shadow: 10px 10px 15px rgb(0,0,0,0.1);
+}
+.form:hover{
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+input,textarea{
+    width: 80%;
+    padding: 6px;
+    border:solid black;
+    outline: none;
+    border-radius: 12px;
+    margin: 6px 0px;
+    margin-left: 50px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 15px rgb(0,0,0,0.1);
+    
+}
+.feedback-email{
+    visibility: hidden;
+}
+#subject::selection{
+    user-select: none;
+}
+#btn{
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    width: 150px;
+    padding: 6px;
+    cursor: pointer;
+    background-color: rgb(39, 176, 39);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+}
+#btn:hover{
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+.h1feedback{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+}

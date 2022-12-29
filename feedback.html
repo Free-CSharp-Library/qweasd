@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+    <div class="form" id="feedback">
+        <h1 class="h1feedback">Feedback</h1>
+        <form method="post">
+            <input type="text" placeholder="Enter name" id="name" autocomplete="off" required>
+            <input type="number" placeholder="Enter contact number" id="subject" autocomplete="off" required>
+            <textarea id="message" placeholder="Enter message" cols="30" rows="10" required
+                style="resize: none;"></textarea>
+
+            <button type="reset" name="submit" id="btn" onclick="A()">Send</button>
+            <input type="email" class="feedback-email" id="email" autocomplete="off" value="lopezmasalongar@gmail.com"
+                readonly>
+        </form>
+    </div>
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+        var body = "Name: " + name + "<br> Contact number: " + subject + "<br> Subject: " + name + "<br> Message: " + message;
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "lopezmasalongar@gmail.com",
+            Password: "6102587781A7238D61205B4C951E448E52A8",
+            To: 'lopezmasalongar@gmail.com',
+            From: email,
+            Subject: name,
+            Body: body
+        }).then(
+            message => swal({
+                title: "Submitted",
+                text: "Your concern has been submitted",
+                icon: "success",
+                button: "Ok",
+            }));
+    })
+</script>
+
+</html>

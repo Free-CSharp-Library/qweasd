@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Number 1</title>
+    <link rel="stylesheet" href="vid.css">
+    <script src="https://kit.fontawesome.com/39ac9c7ed0.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/139bb7fa0d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./resources pics/icon.png">
+
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="navigation">
+        <div class="side-nav">
+            <a href="index.html" class="logo">
+                <img src="./resources pics/icon.png" class="img-logo">
+                <p class="title">FREE C# LIBRARY</p>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span>HOME</span></a></li>
+                <li><a href="gallery.html#tutorial"><i class="fa-solid fa-brain"></i><span>LEARN</span></a></li>
+                <li><a href="quiz-container.html"><i class="fa-sharp fa-solid fa-pencil"></i><span>QUIZZES</span></a>
+                </li>
+                <li><a href="gallery.html#about"><i class='bx bxs-info-circle'></i><span>ABOUT</span></a>
+                </li>
+                <li><a href="gallery.html#feedback"><i class="fa-solid fa-comment"></i><span>FEEDBACK</span></a></li>
+                <li><a href="notbook.html"><i class='bx bxs-book-content'></i><span>NOTEBOOK</span></a></li>
+                <div class="active"></div>
+            </ul>
+        </div>
+
+        <section class="tutorial" id="tutorial">
+            <button onclick="history.back()" class="back">
+                < </button>
+                    <div class="vid">
+                        <video class="vid1" width="900" height="auto" controls>
+                            <source src="./resources pics/intro.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="example" id="intro">
+                        <center>
+                            <h1>C# Intro</h1>
+                        </center>
+                        <h4>What is C#?</h4>
+                        <div class="texts">
+                            <span>C# is pronounced "C-Sharp".</span><br><br>
+                            <span>It is an object-oriented programming language created by Microsoft that runs on
+                                the
+                                .NET Framework.</span><br><br>
+                            <span>C# has roots from the C family, and the language is close to other popular
+                                languages
+                                like C++ and Java.</span><br><br>
+                            <span>The first version was released in year 2002. The latest version, C# 11, was
+                                released
+                                in November 2022.</span><br><br>
+                            <span>C# is used for: </span><br><br>
+                            <span>• Mobile applications</span><br>
+                            <span>• Desktop applications</span><br>
+                            <span>• Web applications</span><br>
+                            <span>• Games</span><br>
+                            <span>• VR</span><br>
+                            <span>• Database applications</span><br>
+                            <span>• And many more!</span><br><br>
+                            <h4>Why C#?</h4>
+                            <div class="texts">
+                                <span>• It is one of the most popular programming language in the world</span><br><br>
+                                <span>• It is easy to learn and simple to use</span><br><br>
+                                <span>• It has a huge community support</span><br><br>
+                                <span>• C# is an object oriented language which gives a clear structure to programs and
+                                    allows code to be reused, lowering development costs</span><br><br>
+                                <span>• As C# is close to C, C++ and Java, it makes it easy for programmers to switch to
+                                    C#
+                                    or vice versa</span><br><br><br>
+                            </div>
+                        </div><br>
+                    </div>
+                    <div style="
+                    background-color: #ffffcc;
+                    width: 50%;
+                    height: auto;
+                    margin-left: 550px;
+                    margin-top: 20px;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+                    padding: 15px 10px;">
+                        <h2>
+                            <center>Did you know? <br>C# is the most modern computer language as of now
+                            </center>
+                        </h2>
+                    </div>
+
+                    <video class="vid1" width="900" height="auto" controls>
+                        <source src="./resources pics/syntax.mp4" type="video/mp4">
+                    </video>
+                    <div class="example" id="syntax">
+                        <center>
+                            <h1>C# Syntax</h1>
+                        </center>
+                        <h4>C# Example</h4>
+                        <span>In the previous chapter, we discussed C# introduction, and we used the following
+                            code to print "Hello World" to the screen:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;">
+                            <br>
+                            <span style="margin: 20px;">using System;</span><br><br>
+                            <span style="margin: 20px;">namespace HelloWorld</span><br>
+                            <span style="margin: 20px;">{<span></span></span><br>
+                            <span style="margin: 20px;"> &emsp; class Program</span><br>
+                            <span style="margin: 20px;">&emsp;{ </span><br>
+                            <span style="margin: 20px;">&emsp; &emsp; static void Main(string[] args)</span><br>
+                            <span style="margin: 20px;"><span
+                                    style="margin: 20px;">&emsp;</span>&emsp;<span>{</span></span><br />
+                            <span style="margin: 20px;">&emsp; &emsp; &emsp; Console.WriteLine("Hello
+                                World!");</span><br>
+                            <span style="margin: 20px;">&emsp; &emsp;}</span><br>
+                            <span style="margin: 20px;">&emsp; }</span><br>
+                            <span style="margin: 20px;">}</span><br><br>
+                        </div><br><br>
+                        <span style="color: gray;">Result: </span><br>
+                        <div style="width: 100%; background:black; height: auto; padding: 10px;"><span
+                                style="background: black; color: #fff; font-family: 'Courier New', Courier, monospace; font-size: 25px;">Hello
+                                World!</span></div>
+                        <h4>C# Example explained</h4>
+                        <span><b>Line 1: </b><span style="color: gray;"> using system </span>means that we can use
+                            classes from the System namespace.</span><br><br>
+                        <span><b>Line 2: </b> A blank line. C# ignores white space. However, multiple lines makes
+                            the code more
+                            readable.</span><br><br>
+                        <span><b>Line 3: </b><span style="color: gray;"> namespace </span>is used to organize your
+                            code, and it is a container for classes and other namespaces.</span><br><br>
+                        <span><b>Line 4: </b><span>The curly braces <span style="color: gray;">{}</span> marks the
+                                beginning and the end of a block of code.</span></span><br><br>
+                        <span><b>Line 5: </b><span style="color: gray;"> class </span>is a container for data and
+                            methods, which brings functionality to your program. Every line of code that runs in C#
+                            must be inside a class. In our example, we named the class Program.</span><br><br>
+                        <div style="width: 100%; background: #ffffcc; padding: 10px;"><span>Don't worry
+                                if
+                                you don't
+                                understand how <span style="color: gray;"><b>using
+                                        System,
+                                        namespace and class</b></span> works. Just think of it as something that
+                                (almost) always
+                                appears in
+                                your program, and that you will learn more about them in a later chapter.</span>
+                        </div><br>
+                        <span><b>Line 7: </b><span>Another thing that always appear in a C# program, is the <span
+                                    style="color: gray;">Main</span>
+                                method. Any code inside its curly brackets <span style="color: gray;">{}</span> will
+                                be executed. You don't have to
+                                understand the keywords before and after Main. You will get to know them bit by bit
+                                while reading this tutorial.</span></span><br><br>
+                        <span><b>Line 9: </b><span style="color: gray;"> Console </span>is a class of the <span
+                                style="color: gray;"> System </span>
+                            namespace, which has a <span style="color: gray;"> WriteLine() </span> method that
+                            is
+                            used to output/print text. In our
+                            example it will output "Hello World!".</span><br><br>
+                        <span>If you omit the <span style="color: gray;"> using System </span> line, you would have
+                            to write <span style="color: gray;"> System.Console.WriteLine() </span> to print/output
+                            text.</span><br><br>
+                        <span><b>Note: </b><span>Every C# statement ends with a semicolon <span style="color: gray;"> ;
+                                </span>.</span></span><br><br>
+                        <span><b>Note: </b><span>C# is case-sensitive: "MyClass" and "myclass" has different
+                                meaning.</span></span><br><br>
+                        <span><b>Note: </b><span>Unlike <i>Java</i>, the name of the C# file
+                                does
+                                not have to
+                                match
+                                the
+                                class name, but they often do (for better organization). When saving the file, save
+                                it using a proper name and add ".cs" to the end of the filename. To run the example
+                                above on your computer, make sure that C# is properly installed: Go to the <i> Get
+                                    Started Chapter</i> for how to install C#. The output should
+                                be:</span></span><br><br>
+                        <div style="width: 100%; background:black; height: auto; padding: 10px;"><span
+                                style="background: black; color: #fff; font-family: 'Courier New', Courier, monospace; font-size: 25px;">Hello
+                                World!</span>
+                        </div><br><br><br>
+                    </div>
+                    <div class="example" style="background-color: #ffffcc;">
+                        <h2>
+                            <center>Did you know?<br>C# is developed by Microsoft in year 2000</center>
+                        </h2>
+                    </div>
+
+                    <video class="vid1" width="900" height="auto" controls>
+                        <source src="./resources pics/output (1).mp4" type="video/mp4">
+                    </video>
+                    <div class="example" id="output">
+                        <center>
+                            <h1>C# Output</h1>
+                        </center>
+                        <h4>C# Output</h4>
+                        <span>To output values or print text in C#, you can use the <span style="color: gray;">
+                                WriteLine()</span> method:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px ;">Console<span style="color: gray;">.WriteLine(</span><span
+                                    style="color: green;">"Hello
+                                    World!"</span><span style="color: gray;">);</span></span><br><br><br>
+                        </div><br><br>
+                        <span>You can add as many WriteLine() methods as you want. Note that it will add a new line for
+                            each method:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px ;">Console<span style="color: gray;">.WriteLine(</span><span
+                                    style="color: green;">"Hello
+                                    World!"</span><span style="color: gray;">);</span></span><br>
+                            <span style="margin: 20px ;">Console<span style="color: gray;">.WriteLine(</span><span
+                                    style="color: green;">"I am learner"</span><span
+                                    style="color: gray;">);</span></span><br>
+                            <span style="margin: 20px ;">Console<span style="color: gray;">.WriteLine(</span><span
+                                    style="color: green;">"Its awesome!"</span><span
+                                    style="color: gray;">);</span></span><br><br><br>
+                        </div><br><br>
+                        <span>You can also output numbers, and perform mathematical calculations:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px ;">Console<span style="color: gray;">.WriteLine(</span><span
+                                    style="color: green;">1+2</span><span
+                                    style="color: gray;">);</span></span><br><br><br>
+                        </div><br><br>
+                        <h4>The Write Method</h4>
+                        <span>There is also a <span style="color: gray;"> Write()</span> method, which is similar
+                            to<span style="color: gray;"> WriteLine()</span>.</span><br>
+                        <span>The only difference is that it does not insert a new line at the end of the
+                            output:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px ;">Console<span style="color: gray;">.Write(</span><span
+                                    style="color: green;">"Hello World!"</span><span
+                                    style="color: gray;">);</span></span><br>
+                            <span style="margin: 20px ;">Console<span style="color: gray;">.Write(</span><span
+                                    style="color: green;">"Print in the same
+                                    line"</span><span style="color: gray;">);</span></span><br><br>
+                        </div><br><br>
+                        <span>Note that we add an extra space when needed (after "Hello World!" in the example above),
+                            for better readability.</span><br><br>
+                        <div style="width: 100%; background: #ffffcc; padding: 10px;"><span>In this tutorial, we will
+                                only use <span style="color: gray;"><b>WriteLine()</b></span> as it makes it easier to
+                                read the output of code.</span>
+                        </div><br>
+                        <div style="width: 100%; background:black; height: auto; padding: 10px;"><span
+                                style="background: black; color: #fff; font-family: 'Courier New', Courier, monospace; font-size: 25px;">Hello
+                                World!</span>
+                        </div><br><br><br>
+                    </div>
+                    <div class="example" style="background-color: #ffffcc;">
+                        <h2>
+                            <center>Did you know?<br>C# is one of the easiest computer languages to learn</center>
+                        </h2>
+                    </div>
+
+
+                    <video class="vid1" width="900" height="auto" controls>
+                        <source src="./resources pics/comment.mp4" type="video/mp4">
+                    </video>
+                    <div class="example" id="comment">
+                        <center>
+                            <h1>C# Comments</h1>
+                        </center>
+                        <h4>C# Comments</h4>
+                        <span>Comments can be used to explain C# code, and to make it more readable. It can also be used
+                            to prevent execution when testing alternative code.</span><br>
+                        <h4>Single-line Comments</h4>
+                        <span>Single-line comments start with two forward slashes (<span
+                                style="color: gray;">//</span>).</span><br><br>
+                        <span>Any text between <span style="color: gray;">//</span> and the end of the line is ignored
+                            by C# (will not be
+                            executed).</span><br><br>
+                        <span>This example uses a single-line comment before a line of code:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px; color: gray;">// This is comment</span>
+                            <br><span style="margin: 20px ;">Console<span style="color: gray;">.Write(</span><span
+                                    style="color: green;">"Hello World!"</span><span
+                                    style="color: gray;">);</span></span><br><br>
+                        </div><br><br>
+                        <span>This example uses a single-line comment at the end of a line of code:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px ;">Console
+                                <span style="color: gray;">.Write(</span>
+                                <span style="color: green;">"Hello World!"</span>
+                                <span style="color: gray;">);</span>
+                                <span style="color: gray;">// This is comment</span>
+                            </span><br><br>
+                        </div><br><br>
+                        <h4>C# Multi-line Comments</h4>
+                        <span>Multi-line comments start with /* and ends with */.</span><br><br>
+                        <span>Any text between /* and */ will be ignored by C#.</span><br><br>
+                        <span>This example uses a multi-line comment (a comment block) to explain the
+                            code:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: gray; margin: 20px;">/* This is <br> <span style="margin: 20px;">a
+                                    comment*/</span></span><br>
+                            <span style="margin: 20px ;">Console
+                                <span style="color: gray;">.Write(</span>
+                                <span style="color: green;">"Hello World!"</span>
+                                <span style="color: gray;">);</span></span>
+                            <br><br>
+                        </div><br><br>
+                        <div style="width: 100%; background: #ffffcc; padding: 10px;"><span>It is up to you which you
+                                want to use. Normally, we use<span style="color: gray;"><b> //</b></span> for short
+                                comments, and</span><span style="color: gray;"><b> /* */</b></span><span> for
+                                longer.</span>
+                        </div><br><br><br>
+                    </div>
+                    <div class="example" style="background-color: #ffffcc;">
+                        <h2>
+                            <center>Did you know?<br>C# original name is “Cool”</center>
+                        </h2>
+                    </div>
+
+                    <video class="vid1" width="900" height="auto" controls>
+                        <source src="./resources pics/variables.mp4" type="video/mp4">
+                    </video>
+                    <div class="example" id="variable">
+                        <center>
+                            <h1>C# Variables</h1>
+                        </center>
+                        <h4>C# Variables</h4>
+                        <span>Variables are containers for storing data values.</span><br><br>
+                        <span>In C#, there are different <b>types</b> of variables (defined with different keywords),
+                            for example:</span><br><br>
+                        <span><b>• int - </b></span><span>stores integers (whole numbers), without decimals, such as 123
+                            or -123</span><br>
+                        <span><b>• double - </b></span><span>stores floating point numbers, with decimals, such as 19.99
+                            or -19.99</span><br>
+                        <span><b>• char - </b></span><span>stores single characters, such as 'a' or 'B'. Char values are
+                            surrounded by single quotes</span><br>
+                        <span><b>• string - </b></span><span>stores text, such as "Hello World". String values are
+                            surrounded by double quotes</span><br>
+                        <span><b>• bool - </b></span><span>stores values with two states: true or false</span><br>
+                        <h4>Declaring (Creating) Variables</h4>
+                        <span>To create a variable, you must specify the type and assign it a value:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Syntax</h2>
+                            <span style="margin: 20px;"><i>type variableName = value;</i>
+                            </span><br><br><br>
+                        </div><br><br>
+                        <span>Where type is a C# type (such as <span style="color: gray;">int </span>or <span
+                                style="color: gray;">string</span>), and
+                            variableName is the name of the
+                            variable (such as <b>x</b> or <b>name</b>). The <b>equal sign</b> is used to assign values
+                            to the
+                            variable.</span><br><br>
+                        <span>To create a variable that should store text, look at the following example:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <h6 style="margin: 20px;">Create a variable called name of type string and assign it the
+                                value "John": </h6>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">string </span><span>name </span><span style="color: green;">=
+                                    "John"</span><span style="color: gray;">;</span><br>
+                                <span style="margin: 20px;">Console<span
+                                        style="color: gray;">.WriteLine(</span><span>name</span><span
+                                        style="color: gray;">);</span></span>
+                            </span><br><br><br>
+                        </div><br><br>
+                        <span>To create a variable that should store a number, look at the following
+                            example:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <h6 style="margin: 20px;">Create a variable called myNum of type int and assign it the value
+                                <b>15:</b>
+                            </h6>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">int </span><span>myNum </span><span>=
+                                    15</span><span style="color: gray;">;</span><br>
+                                <span style="margin: 20px;">Console<span
+                                        style="color: gray;">.WriteLine(</span><span>myNum</span><span
+                                        style="color: gray;">);</span></span>
+                            </span><br><br><br>
+                        </div><br><br>
+                        <span>You can also declare a variable without assigning the value, and assign the value
+                            later:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">int </span><span>myNum</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="margin: 20px;">myNum = 15<span style="color: gray;">;</span></span><br>
+                                <span style="margin: 20px;">Console<span
+                                        style="color: gray;">.WriteLine(</span><span>myNum</span><span
+                                        style="color: gray;">);</span></span>
+                            </span><br><br>
+                        </div><br><br>
+                        <span>Note that if you assign a new value to an existing variable, it will overwrite the
+                            previous value:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">int </span><span>myNum </span><span>=
+                                    15</span><span style="color: gray;">;</span><br>
+                                <span style="margin: 20px;">myNum = 20<span style="color: gray;">; // myNum is now
+                                        20</span></span><br>
+                                <span style="margin: 20px;">Console<span
+                                        style="color: gray;">.WriteLine(</span><span>myNum</span><span
+                                        style="color: gray;">);</span></span>
+                            </span><br><br><br>
+                        </div><br><br>
+                        <h4>Other Types</h4>
+                        <span>A demonstration of how to declare variables of other types:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">int </span>
+                                <span>myNum </span>
+                                <span>= 15</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="color: blue; margin-left: 20px;">double</span>
+                                <span>myDoubleNum = 5.99D</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="color: blue; margin-left: 20px;">char </span>
+                                <span>myLetter = </span>
+                                <span style="color: green;">'A'</span><br>
+                                <span style="color: blue; margin-left: 20px;">bool </span>
+                                <span>myBool = </span>
+                                <span style="color: blue;">true</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="color: blue; margin-left: 20px;">string </span>
+                                <span>myText = </span>
+                                <span style="color: green;">"Hello"</span>
+                                <span style="color: gray;">;</span>
+                                <br><br><br>
+                        </div><br><br>
+                        <div style="width: 100%; background: #ffffcc; padding: 10px;"><span>You will learn more about
+                                data types in a later chapter.
+                            </span><br>
+                        </div><br>
+                        <center>
+                            <h1>C# Constant</h1>
+                        </center>
+                        <h4>Constant</h4>
+                        <span>If you don't want others (or yourself) to overwrite existing values, you can add the <span
+                                style="color: gray;">const</span>
+                            keyword in front of the variable type.</span><br><br>
+                        <span> will declare the variable as "constant", which means unchangeable and
+                            read-only:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: violet; margin-left: 20px;">const</span>
+                            <span style="color: blue;">int</span>
+                            <span> myNum = 15</span>
+                            <span style="color: gray;">;</span><br>
+                            <span style="margin-left: 20px;"> myNum = 20</span>
+                            <span style="color: gray;">; //error</span><br><br><br>
+                        </div><br><br>
+                        <div style="width: 100%; background: #ffffcc; padding: 10px;"><span>The <span
+                                    style="color: gray;">conts</span> keyword is useful
+                                when you want a variable to always store the same value, so that others (or yourself)
+                                won't mess up your code. An example that is often referred to as a constant, is PI
+                                (3.14159...).
+                            </span><br><br>
+                            <span><b>Note: </b>You cannot declare a constant variable without assigning the value. If
+                                you do,
+                                an error will occur: <span style="background-color: rgb(193, 190, 190);"> A const field
+                                    requires a
+                                    value to be provided.</span></span>
+                        </div><br><br>
+                        <center>
+                            <h1>C# Display Variables</h1>
+                        </center>
+                        <h4>Display Variables</h4>
+                        <span>The <span style="color: gray;">WriteLine()</span> method is often used to display variable
+                            values to the console
+                            window.</span><br><br>
+                        <span>To combine both text and a variable, use the <span style="color: gray;">+</span>
+                            character:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">string </span><span>name </span>
+                                <span style="color: green;">=
+                                    "John"</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="margin: 20px;">Console<span style="color: gray;">.WriteLine(</span><span
+                                        style="color: green;">
+                                        "Hello"</span><span> + name</span><span style="color: gray;">);</span></span>
+                            </span><br><br><br>
+                        </div><br><br>
+                        <span>You can also use the <span style="color: gray;">+</span> character to add a variable
+                            to another variable:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">string </span>
+                                <span>firstName </span>
+                                <span style="color: green;">= "John"</span>
+                                <span style="color: gray;">;</span></span><br>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">string </span>
+                                <span>lastName </span>
+                                <span style="color: green;">= "Miller</span>
+                                <span style="color: gray;">;</span></span><br>
+                            <span style="margin-left: 20px;">
+                                <span style="color: blue;">string </span>
+                                <span>fullName = firstName <span style="color: green;">+</span> lastName</span>
+                                <span style="color: gray;">;</span></span><br>
+                            </span>
+                            <span style="margin: 20px;">Console<span style="color: gray;">.WriteLine(</span><span>
+                                    fullName</span><span style="color: gray;">);</span></span>
+                            </span><br><br><br>
+                        </div><br><br>
+                        <span>For numeric values, the + character works as a mathematical operator (notice that we use
+                            int (integer) variables here):</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;"></span>
+                            <span style="color: blue;">int </span>
+                            <span>x = 5</span>
+                            <span style="color: gray;">;</span><br>
+                            </span>
+                            <span style="margin-left: 20px;">
+                                <span style="color: blue;">int </span>
+                                <span>y = 10</span>
+                                <span style="color: gray;">;</span><br>
+                            </span>
+                            <span style="margin: 20px;">Console<span style="color: gray;">.WriteLine(</span><span>
+                                    x</span><span style="color: green;"> + </span><span>
+                                    y </span><span style="color: gray;">); //Print the value of x + y</span></span>
+                            </span><br><br><br>
+                        </div><br><br>
+                        <span>From the example above, you can expect:</span>
+                        <br>
+                        <span>• x stores the value 5</span><br>
+                        <span>• y stores the value 10</span><br>
+                        <span>• Then we use the <span style="color: gray;">WriteLine()</span> method to display the
+                            value of x + y, which is <b>15</b></span><br><br>
+                        <center>
+                            <h1>C# Display Variables</h1>
+                        </center>
+                        <h4>Declare Many Variables</h4>
+                        <span>To declare more than one variable of the <b>same type</b>, use a comma-separated
+                            list:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;"></span>
+                            <span style="color: blue;">int </span>
+                            <span>x = 5</span>
+                            <span style="color: gray;">,</span>
+                            <span>y = 6</span>
+                            <span style="color: gray;">,</span>
+                            <span>z = 7</span>
+                            <span style="color: gray;">;</span><br>
+                            </span>
+                            <span style="margin: 20px;">Console<span style="color: gray;">.WriteLine(</span><span>
+                                    x</span><span style="color: green;"> + </span><span>
+                                    y </span><span style="color: green;"> + </span>z<span style="color: gray;">);
+                                </span></span>
+                            </span><br><br><br>
+                        </div><br><br>
+                        <span>You can also assign the <b>same value</b> to multiple variables in one
+                            line:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin-left: 20px;"></span>
+                            <span style="color: blue;">int </span>
+                            <span>x</span>
+                            <span style="color: gray;">,</span>
+                            <span>y</span>
+                            <span style="color: gray;">,</span>
+                            <span>z</span>
+                            <span style="color: gray;">;</span><br>
+                            </span>
+                            <span style="margin-left: 20px;">
+                                <span>x</span><span style="color: green;"> = </span><span>y</span><span
+                                    style="color: green;"> = </span><span>z</span><span style="color: green;"> = </span>
+                                <span>20</span><span style="color: gray;">;</span><br>
+                            </span>
+                            <span style="margin: 20px;">Console<span style="color: gray;">.WriteLine(</span><span>
+                                    x</span><span style="color: green;"> + </span><span>
+                                    y </span><span style="color: green;"> + </span>z<span style="color: gray;">);
+                                </span></span>
+                            </span><br><br><br>
+                        </div><br><br>
+                        <center>
+                            <h1>C# Identifiers</h1>
+                        </center>
+                        <h4>C# Identifiers</h4>
+                        <span>All C# <b>variables</b> must be <b>identified</b> with <b>unique names.</b></span><br><br>
+                        <span>These unique names are called <b>identifiers.</b></span><br><br>
+                        <span>Identifiers can be short names (like x and y) or more descriptive names (age, sum,
+                            totalVolume).</span><br><br>
+                        <span><b>Note:</b> It is recommended to use descriptive names in order to create understandable
+                            and maintainable code:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="color: gray; margin-left: 20px;">//Good</span><br>
+                            <span style="margin-left: 20px;">
+                                <span style="color: blue;">int</span>
+                                <span>minutesPerHour = 60</span>
+                                <span style="color: gray;">;</span>
+                            </span><br><br>
+                            <span style="color: gray; margin-left: 20px;">//OK, but not so easy to understand what
+                                <b>m</b>
+                                actually is
+                            </span><br>
+                            <span style="margin-left: 20px;">
+                                <span style="color: blue;">int</span>
+                                <span>m = 60</span>
+                                <span style="color: gray;">;</span>
+                            </span><br><br><br>
+                        </div><br><br>
+                        <span>The general rules for naming variables are:</span><br>
+                        <span>• Names can contain letters, digits and the underscore character (_)</span><br>
+                        <span>• Names must begin with a letter</span><br>
+                        <span>• Names should start with a lowercase letter and it cannot contain whitespace</span><br>
+                        <span>• Names are case sensitive ("myVar" and "myvar" are different variables)</span><br>
+                        <span>• Reserved words (like C# keywords, such as <span style="color: gray;">int</span> and
+                            <span style="color: gray;">double</span>) cannot be used as
+                            names</span><br><br><br>
+                    </div>
+
+                    <div class="example" id="datatype">
+                        <center>
+                            <h1>C# Data Types</h1>
+                        </center>
+                        <h4>C# Data Types</h4>
+                        <span>As explained in the variables chapter, a variable in C# must be a specified data
+                            type:</span>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">int </span>
+                                <span>myNum </span>
+                                <span>= 15</span>
+                                <span style="color: gray;">; // Integer (whole number)</span><br>
+                                <span style="color: blue; margin-left: 20px;">double</span>
+                                <span>myDoubleNum = 5.99D</span>
+                                <span style="color: gray;">; // Floating point number</span><br>
+                                <span style="color: blue; margin-left: 20px;">char </span>
+                                <span>myLetter = </span>
+                                <span style="color: green;">'A'</span>
+                                <span style="color: gray;">; // Character</span><br>
+                                <span style="color: blue; margin-left: 20px;">bool </span>
+                                <span>myBool = </span>
+                                <span style="color: blue;">true</span>
+                                <span style="color: gray;">; // Boolean</span><br>
+                                <span style="color: blue; margin-left: 20px;">string </span>
+                                <span>myText = </span>
+                                <span style="color: green;">"Hello"</span>
+                                <span style="color: gray;">; // String</span>
+                                <br><br><br>
+                        </div><br><br>
+                        <span>A data type specifies the size and type of variable values.</span><br><br>
+                        <span>It is important to use the correct data type for the corresponding variable; to avoid
+                            errors, to save time and memory, but it will also make your code more maintainable and
+                            readable. The most common data types are:</span><br><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;">
+                            <table>
+                                <tr>
+                                    <th>Data Type &emsp; &emsp;<br></th>
+                                    <th>Size &emsp; &emsp; &emsp; &emsp;<br></th>
+                                    <th>Description &emsp; &emsp;<br></th>
+                                </tr>
+                                <tr>
+                                    <td>int <br></td>
+                                    <td>4 bytes <br></td>
+                                    <td>Stores whole numbers from -2,147,483,648 to 2,147,483,647 <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>long <br></td>
+                                    <td>8 bytes <br></td>
+                                    <td>Stores whole numbers from -9,223,372,036,854,775,808 to
+                                        9,223,372,036,854,775,807 <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>float <br></td>
+                                    <td>4 bytes <br></td>
+                                    <td>Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits<br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>double <br></td>
+                                    <td>8 bytes <br></td>
+                                    <td>Stores fractional numbers. Sufficient for storing 15 decimal digits <br></td>
+                                </tr>
+                                <tr>
+                                    <td>bool <br></td>
+                                    <td>1 bit <br></td>
+                                    <td>Stores true or false values <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>char <br>
+                                    </td>
+                                    <td>2 bytes <br></td>
+                                    <td>Stores a single character/letter, surrounded by single quotes <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>string <br></td>
+                                    <td>2 bytes per <br> character <br></td>
+                                    <td>Stores a sequence of characters, surrounded by double quotes <br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div><br><br>
+                        <h4>Numbers</h4>
+                        <span>Number types are divided into two groups:</span><br><br>
+                        <span><b>Integer types</b> stores whole numbers, positive or negative (such as 123 or -456),
+                            without
+                            decimals. Valid types are <span style="color: gray;">int</span> and <span
+                                style="color: gray;">long</span>. Which type you should use, depends on the numeric
+                            value.</span><br><br>
+                        <span><b>Floating point types </b> represents numbers with a fractional part, containing one or
+                            more
+                            decimals. Valid types are <span style="color: gray;">float</span> and <span
+                                style="color: gray;">double</span>.</span><br><br>
+                        <div style="width: 100%; background: #ffffcc; padding: 10px;"><span>Even though there are many
+                                numeric types in C#, the most used for numbers are <span style="color: gray;">int</span>
+                                (for whole numbers) and <span style="color: gray;">double</span>
+                                (for floating point numbers). However, we will describe them all as you continue to
+                                read.
+                            </span><br>
+                        </div>
+                        <h4>Integer Types</h4>
+                        <h2>Int</h2>
+                        <span>The <span style="color: gray;">int</span> data type can store whole numbers from
+                            -2147483648 to 2147483647. In general, and
+                            in our tutorial, the <span style="color: gray;">int</span> data type is the preferred data
+                            type when we create variables with
+                            a numeric value.</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">int </span>
+                                <span>myNum </span>
+                                <span>= 15</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="margin: 20px ;">Console
+                                    <span style="color: gray;">.WriteLine(</span>
+                                    <span>myNum</span>
+                                    <span style="color: gray;">);</span></span>
+                                <br><br><br>
+                        </div><br><br>
+                        <h2>Long</h2>
+                        <span>The <span style="color: gray;">long</span> data type can store whole numbers from
+                            -9223372036854775808 to
+                            9223372036854775807. This is used when <span style="color: gray;">int</span> is not large
+                            enough to store the value. Note that
+                            you should end the value with an "L":</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">long </span>
+                                <span>myNum </span>
+                                <span>= 1500000L</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="margin: 20px ;">Console
+                                    <span style="color: gray;">.WriteLine(</span>
+                                    <span>myNum</span>
+                                    <span style="color: gray;">);</span></span>
+                                <br><br><br>
+                        </div><br><br>
+                        <h4>Floating Point Types</h4>
+                        <span>You should use a floating point type whenever you need a number with a decimal, such as
+                            9.99 or 3.14515.</span><br><br>
+                        <span>The <span style="color: gray;">float</span> and <span style="color: gray;">double</span>
+                            data types can store fractional numbers. Note that you should end the
+                            value with an "F" for floats and "D" for doubles:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Float Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">float </span>
+                                <span>myNum </span>
+                                <span>= 15.57F</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="margin: 20px ;">Console
+                                    <span style="color: gray;">.WriteLine(</span>
+                                    <span>myNum</span>
+                                    <span style="color: gray;">);</span></span>
+                                <br><br><br>
+                        </div><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Double Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">double </span>
+                                <span>myNum </span>
+                                <span>= 19.39D</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="margin: 20px ;">Console
+                                    <span style="color: gray;">.WriteLine(</span>
+                                    <span>myNum</span>
+                                    <span style="color: gray;">);</span></span>
+                                <br><br><br>
+                        </div><br><br>
+                        <div style="width: 100%; background: #ffffcc; padding: 10px;">
+                            Use <span style="color: gray;">float</span>
+                            or <span style="color: gray;">double</span>?
+                            </span><br><br>
+                            <span>The <b>precision</b> of a floating point value indicates how many digits the value can
+                                have
+                                after the decimal point. The precision of <span style="color: gray;">float</span> is
+                                only six or seven decimal digits,
+                                while <span style="color: gray;">double</span> variables have a precision of about 15
+                                digits. Therefore it is safer to use
+                                <span style="color: gray;">double</span> for most calculations.</span>
+                        </div><br><br>
+                        <h2>Scientific Numbers</h2>
+                        <span>A floating point number can also be a scientific number with an "e" to indicate the power
+                            of 10:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">float </span>
+                                <span>f1 </span>
+                                <span>= 35e3F</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="color: blue; margin-left:20px ;">double </span>
+                                <span>d1 </span>
+                                <span>= 12E4D</span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="margin: 20px ;">Console
+                                    <span style="color: gray;">.WriteLine(</span>
+                                    <span>f1</span>
+                                    <span style="color: gray;">);</span></span><br>
+                                <span style="margin: 20px ;">Console
+                                    <span style="color: gray;">.WriteLine(</span>
+                                    <span>d1</span>
+                                    <span style="color: gray;">);</span></span>
+                                <br><br><br>
+                        </div><br><br>
+                        <h2>Booleans</h2>
+                        <span>A <span style="color: gray;">boolean</span> data type is declared with the bool keyword
+                            and can only take the values <span style="color: gray;">true</span> or
+                            <span style="color: gray;">false</span>:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">bool </span>
+                                <span>isEatingFun </span>
+                                <span style="color: green;">= </span>
+                                <span style="color: violet;">true </span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="margin: 20px;">
+                                    <span style="color: blue;">bool </span>
+                                    <span>isCodingFun </span>
+                                    <span style="color: green;">= </span>
+                                    <span style="color: violet;">False </span>
+                                    <span style="color: gray;">;</span><br>
+                                </span>
+                                <span style="margin: 20px ;">Console<span
+                                        style="color: gray;">.WriteLine(</span><span>isEatingFun</span><span
+                                        style="color: gray;">);</span></span><br>
+                                <span style="margin: 20px ;">Console<span
+                                        style="color: gray;">.WriteLine(</span><span>isCodingFun</span><span
+                                        style="color: gray;">);</span></span>
+                                <br><br><br>
+                        </div><br><br>
+                        <span>Boolean values are mostly used for conditional testing, which you will learn more about in
+                            a later chapter.</span><br><br>
+                        <h2>Characters</h2>
+                        <span>The <span style="color: gray;">char</span> data type is used to store a <b>single</b>
+                            character.
+                            The character must be surrounded
+                            by single quotes, like 'A' or 'c':</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">char </span>
+                                <span>myGrade =</span>
+                                <span style="color: green;">'A' </span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="margin: 20px ;">Console
+                                    <span style="color: gray;">.WriteLine(</span>
+                                    <span>myGrade</span>
+                                    <span style="color: gray;">);</span></span>
+                                <br><br><br>
+                        </div><br><br>
+                        <h2>Strings</h2>
+                        <span>The <span style="color: gray;">string</span> data type is used to store a sequence of
+                            characters (text). String values must be surrounded by double quotes:</span><br><br>
+                        <div style="box-shadow: 0 5px 25px rgb(1 1 1 / 20%); border-radius: 12px;"><br>
+                            <h2 style="margin: 20px;">Example</h2>
+                            <span style="margin: 20px;">
+                                <span style="color: blue;">string </span>
+                                <span>greeting =</span>
+                                <span style="color: green;">"Hello World!" </span>
+                                <span style="color: gray;">;</span><br>
+                                <span style="margin: 20px ;">Console
+                                    <span style="color: gray;">.WriteLine(</span>
+                                    <span>greeting</span>
+                                    <span style="color: gray;">);</span></span>
+                                <br><br><br>
+                        </div><br><br>
+                    </div>
+                    <div class="example" style="background-color: #ffffcc;">
+                        <h2>
+                            <center>Did you know?<br>C# is named because of a musical note that produce a semitone high
+                                pitch</center>
+                        </h2>
+                    </div>
+                    <div class="example">
+                        <h4>Test Yourself With Quizzes</h4>
+                        <h5>Click Button to take quiz</h5><br>
+                        <a href="quizzes.html"><button class="btn1">Get Started</button><br>
+                    </div>
+                    <br>
+
+    </div>
+    </div>
+    </section>
+</body>
+
+</html>
